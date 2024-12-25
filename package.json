@@ -11,7 +11,6 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "node-mailer": "^0.1.1",
-    "node-sass": "^6.0.0",
     "nodemailer": "^6.7.5",
     "react": "^17.0.2",
     "react-3d-cube-transition": "^1.0.5",
@@ -28,6 +27,7 @@
     "react-text-loop": "^2.3.0",
     "react-transition-group": "^4.4.2",
     "react-video-tag": "0.0.10",
+    "sass": "^1.32.0",
     "serve": "^13.0.2",
     "simple-react-lightbox": "^3.6.6",
     "slick-carousel": "^1.8.1",
@@ -63,3 +63,5 @@
     "gh-pages": "^4.0.0"
   }
 }
+
+
