@@ -12,6 +12,8 @@ const Blog = () => {
   function toggleModalOne() {
     setIsOpen(!isOpen);
   }
+
+
   function toggleModalTwo() {
     setIsOpen2(!isOpen2);
   }
