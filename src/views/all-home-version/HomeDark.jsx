@@ -10,6 +10,8 @@ import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
 
+
+
 const HomeTwo = () => {
   useDocumentTitle(
     "Chadi Ayari, Full Stack Software Engineer, offering expertise in both mobile and web development. Check out mypersonal website to hire or consult."
