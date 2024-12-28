@@ -23,12 +23,12 @@ const Slider = () => {
               <div className="hb-typo ">
                 <h1 className="font-alt">
                   Hello,
-                  <br /> I'm Chadi Ayari <br /> a{" "}
+                  <br /> I'm Mohamed Amine Koubaa<br /> a{" "}
                   <TextLoop>
-                    <span className="loop-text">Software</span>
-                    <span className="loop-text"> Mobile</span>
+                    <span className="loop-text">Software  Engineer</span>
+                    <span className="loop-text"> Game Developer</span>
                   </TextLoop>{" "}
-                  Engineer
+
                 </h1>
                 <div className="btn-bar mt-4">
                   <a className="px-btn px-btn-theme btn-md" href="#about">

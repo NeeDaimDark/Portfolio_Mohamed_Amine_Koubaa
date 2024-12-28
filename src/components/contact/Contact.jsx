@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="btn-bar mt-4">
           <a
             className="px-btn px-btn-theme btn-md"
-            href="mailto:info@chadiayari.com"
+            href="mailto:medaminekoubaa4@gmail.com"
           >
             Send me a message
           </a>

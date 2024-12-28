@@ -7,10 +7,10 @@ import {
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/chadi.ayari.1/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/ayari_chadi/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/chadi-ayari-7a11a6157/" },
-  { Social: <FaGithub />, link: "https://github.com/chadiayari" },
+  { Social: <FaFacebookF />, link: "https://www.facebook.com/amine.koubaa.927/" },
+  { Social: <FaInstagram />, link: "https://www.instagram.com/amine.kouubaa/" },
+  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/mohamed-amine-koubaa/" },
+  { Social: <FaGithub />, link: "https://github.com/NeeDaimDark" },
 ];
 
 const Social = () => {

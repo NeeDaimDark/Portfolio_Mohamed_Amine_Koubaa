@@ -16,24 +16,24 @@ const About = () => {
 
         <div className="col-lg-6 my-3">
           <div className="typo-box about-me">
-            <h5>Chadi Ayari</h5>
+            <h5>Mohamed Amine Koubaa</h5>
             <h3>
-              Full Stack <span className="color-theme">Software Engineer</span>
+              Software Engineer and <span className="color-theme">Game Developer</span>
             </h3>
-            <p>I develop and maintain services, mobile apps, and web apps.</p>
+            <p>I specialize in video game development and  backend solutions, creating immersive experiences and efficient systems.</p>
             <div className="row about-list">
               <div className="col-md-6">
                 <div className="media">
                   <label>Age</label>
-                  <p>23 Yr</p>
+                  <p>26 Years</p>
                 </div>
                 <div className="media">
                   <label>Origin</label>
-                  <p>Nabel, Tunisia</p>
+                  <p>Nabeul, Tunisia</p>
                 </div>
                 <div className="media">
                   <label>Current address</label>
-                  <p>Navi Mumbai, India</p>
+                  <p>Tunis, Tunisia</p>
                 </div>
               </div>
               {/* End .col */}
@@ -41,11 +41,11 @@ const About = () => {
               <div className="col-md-6">
                 <div className="media">
                   <label>E-mail</label>
-                  <p>chadiayari@outlook.com</p>
+                  <p>medaminekoubaa4@gmail.com</p>
                 </div>
                 <div className="media">
                   <label>Phone</label>
-                  <p>+21653180256</p>
+                  <p>(+216)58701286</p>
                 </div>
 
                 <div className="media">

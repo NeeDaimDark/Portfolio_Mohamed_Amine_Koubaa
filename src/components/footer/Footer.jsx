@@ -7,13 +7,11 @@ import {
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/chadi.ayari.1/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/ayari_chadi/" },
   {
     Social: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/in/chadi-ayari-7a11a6157/",
+    link: "https://www.linkedin.com/in/mohamed-amine-koubaa/",
   },
-  { Social: <FaGithub />, link: "https://github.com/chadiayari" },
+  { Social: <FaGithub />, link: "https://github.com/NeeDaimDark" },
 ];
 
 const Footer = () => {
@@ -33,7 +31,7 @@ const Footer = () => {
         {/* End .col */}
 
         <div className="col-md-6 my-2 text-center text-md-right">
-          <p>Designed & Built by Chadi Ayari</p>
+          <p>Built by Mohamed Amine Koubaa</p>
         </div>
         {/* End .col */}
       </div>

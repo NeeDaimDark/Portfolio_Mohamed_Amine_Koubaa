@@ -12,65 +12,47 @@ const Skills = () => {
 
           <ul className="aducation-box dark-bg">
             <li>
-              <span className="theme-bg">01/2022-Present</span>
-              <h6>
-                Mobile Engineer <i>(half time, remote)</i>
-              </h6>
-              <p>Towards Zero Waste, Sweden</p>
+              <span className="theme-bg">03/2024 – 09/2024</span>
+              <h6>Game Developer</h6>
+              <p>KnK Studios, Tunisia</p>
               <div className="collapsible">
                 <Collapsible trigger="Read more">
                   <p className="collapsible-content">
-                    Developing a mobile and web app using Flutter, Restful APIs
-                    using Django. <br />
-                    Working in Agile method.
+                    Developed "Dice-Driven Journey," a multiplayer game with mechanics like dice rolling, attacks, and
+                    village upgrades.
+                    <br/> Built server-side functionality using Node.js and MongoDB for real-time player management.
+                    <br/> Optimized game performance using Unity Profiler.
                   </p>
                 </Collapsible>
               </div>
             </li>
             <li>
-              <span className="theme-bg">02/2022-Present</span>
-              <h6>
-                Mobile Engineer <i>(full time, physical presence)</i>
-              </h6>
-              <p>Pillai College, India</p>
+              <span className="theme-bg">2021 – 2022</span>
+              <h6>Embedded Systems Intern</h6>
+              <p>AMA Business, Tunisia</p>
               <div className="collapsible">
                 <Collapsible trigger="Read more">
                   <p className="collapsible-content">
-                    Developing a mobile app using Flutter, Restful APIs using
-                    Flask, and a MongoDB database.
+                    Designed and developed an acquisition card with MODBUS protocol for industrial monitoring systems.
                   </p>
                 </Collapsible>
               </div>
             </li>
             <li>
-              <span className="theme-bg">06/2021-09/2021</span>
-              <h6>SFCC Software Engineer</h6>
-              <p>Bee IT, Serbia</p>
+              <span className="theme-bg">2020 – 2021</span>
+              <h6>Embedded Systems Intern</h6>
+              <p>Dida Mind, Tunisia</p>
               <div className="collapsible">
                 <Collapsible trigger="Read more">
                   <p className="collapsible-content">
-                    Worked as backend software engineer, developing an ecommerce
-                    web app. <br />
-                    Used JavaScript as a language, and SFCC as a CMS.
-                  </p>
-                </Collapsible>
-              </div>
-            </li>
-            <li>
-              <span className="theme-bg">07/2020-09/2020</span>
-              <h6>Frontend Web Developer</h6>
-              <p>ElBoita, Tunisia</p>
-              <div className="collapsible">
-                <Collapsible trigger="Read more">
-                  <p className="collapsible-content">
-                    Worked on ecommerce website, using Wordpress. <br />
-                    Designed pages, created newsletter email form, and user
-                    signup and login.
+                    Designed a water management system using TTGO T-call and developed a linked web application.
+                    <br/> Designed and 3D-printed the system's enclosure using Solidworks.
                   </p>
                 </Collapsible>
               </div>
             </li>
           </ul>
+
           {/* End  .aducation-box */}
         </div>
         {/* End .col */}
@@ -83,18 +65,25 @@ const Skills = () => {
               <span className="dark-bg">2017-2022</span>
               <h6>Software Engineering degree</h6>
               <p>
-                <a
-                  className="university-link"
-                  href="http://www.issatso.rnu.tn/fo/index.php"
-                >
-                  ISSAT Sousse, Tunisia
+                <a className="university-link" href="https://www.esprit.tn" target="_blank" rel="noreferrer">
+                  ESPRIT, Tunisia
+                </a>
+              </p>
+
+            </li>
+            <li>
+              <span className="dark-bg">2021 – 2024</span>
+              <h6>Bachelor's in Applied Computer Science speciality Embedded Systems</h6>
+              <p>
+                <a className="university-link" href="http://www.istic.rnu.tn/fr/" target="_blank" rel="noreferrer">
+                  ISTIC, Borj Cedria, Tunisia
                 </a>
               </p>
             </li>
             <li>
-              <span className="dark-bg">2013-2017</span>
-              <h6>Mathematics High School Degree</h6>
-              <p>LMMN Nabel, Tunisia</p>
+              <span className="dark-bg">2013 – 2017</span>
+              <h6>A-level in Mathematics</h6>
+              <p>Dar Chaaben El Fehri High School, Tunisia</p>
             </li>
           </ul>
           {/* End  .aducation-box */}
@@ -104,96 +93,64 @@ const Skills = () => {
         <div className="col-lg-4 ml-auto my-3">
           <div className="sm-title">
             <h4 className="font-alt">Skills</h4>
-          </div>
-          <div className="gray-bg skill-box">
-            <div className="skill-lt">
-              <h6>Flutter</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 95 + "%" }}
-                >
-                  <span>95%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-
-            <div className="skill-lt">
-              <h6>ReactJS</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 85 + "%" }}
-                >
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-
-            <div className="skill-lt">
-              <h6>NodeJS</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 85 + "%" }}
-                >
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-
-            <div className="skill-lt">
-              <h6>MongoDB</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 90 + "%" }}
-                >
-                  <span>90%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-
-            <div className="skill-lt">
-              <h6>Cloud Services</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 80 + "%" }}
-                >
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-            <div className="skill-lt">
-              <h6>DevOps</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 85 + "%" }}
-                >
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            {/* End skill-lt */}
-            <div className="skill-lt">
-              <h6>Public Speaking</h6>
-              <div className="skill-bar">
-                <div
-                  className="skill-bar-in theme-bg"
-                  style={{ width: 95 + "%" }}
-                >
-                  <span>95%</span>
-                </div>
+          <div className="skill-lt">
+            <h6>Unity Engine</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "95%"}}>
+                <span>75%</span>
               </div>
             </div>
           </div>
+          <div className="skill-lt">
+            <h6>Node.js</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "90%"}}>
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div className="skill-lt">
+            <h6>MongoDB</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "90%"}}>
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div className="skill-lt">
+            <h6>Flutter</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "60%"}}>
+                <span>60%</span>
+              </div>
+            </div>
+          </div>
+          <div className="skill-lt">
+            <h6>Unreal Engine</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "40%"}}>
+                <span>40%</span>
+              </div>
+            </div>
+          </div>
+          <div className="skill-lt">
+            <h6>ReactJS</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "85%"}}>
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+          <div className="skill-lt">
+            <h6>Scrum Agile</h6>
+            <div className="skill-bar">
+              <div className="skill-bar-in theme-bg" style={{width: "85%"}}>
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          </div>
+
         </div>
         {/* End .col */}
       </div>

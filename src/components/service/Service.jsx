@@ -1,17 +1,28 @@
 import React from "react";
 
-const ServiceContent = [
+const ServiceContent = [ {
+  icon: "ti-game",
+  no: "01",
+  service: "GAME DEVELOPMENT",
+  title: "Creating immersive games.",
+},
   {
-    icon: "ti-ruler-pencil",
-    no: "01",
-    service: "WEB & MOBILE DEV",
-    title: "Mobile and web development? I got you covered! ",
+    icon: "ti-server",
+    no: "02",
+    service: "BACKEND DEVELOPMENT",
+    title: "Building efficient server-side solutions.",
   },
   {
-    icon: "ti-shopping-cart",
-    no: "02",
-    service: "E-COMMERCE DEVELOPMENT",
-    title: "Large experience in using the most powerful CMSs",
+    icon: "ti-desktop",
+    no: "03",
+    service: "FULL-STACK DEVELOPMENT",
+    title: "Developing web and mobile applications.",
+  },
+  {
+    icon: "ti-stats-up",
+    no: "04",
+    service: "PROJECT MANAGEMENT",
+    title: "Managing Agile Scrum projects for optimized results.",
   },
   {
     icon: "ti-layout",
