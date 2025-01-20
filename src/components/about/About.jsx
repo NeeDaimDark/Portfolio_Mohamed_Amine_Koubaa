@@ -9,7 +9,7 @@ const About = () => {
           <div className="img-box dark-img-box">
             <img
               src={process.env.PUBLIC_URL + "/img/about/about.png"}
-              alt="About Chadi"
+              alt="About"
             />
           </div>
         </div>

@@ -62,7 +62,7 @@ const HeaderFluid = () => {
               <Link to="/" className="sidebar-logo">
                 <img
                   src={process.env.PUBLIC_URL + "/img/logo/logo.png"}
-                  alt="chadi ayari"
+                  alt="mohamed amine koubaa"
                 />
               </Link>
               <Scrollspy

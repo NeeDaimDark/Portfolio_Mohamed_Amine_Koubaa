@@ -134,7 +134,7 @@ const HomeTwo = () => {
                     <i className="ti-email"></i>
                   </div>
                   <span className="media-body">
-                    info@chadiayari.com chadiayari@outlook.com
+                    medaminekoubaa4@gmail.com
                   </span>
                 </div>
                 {/* End media */}
