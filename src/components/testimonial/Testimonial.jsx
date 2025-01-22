@@ -26,7 +26,7 @@ export default function SimpleSlider() {
   const TestimonilContent = [
     {
       imageName: "testimonial1",
-      desc: `  Chadi, it was pleasure to meet you and be your mentor. You are an
+      desc: `  Amine, it was pleasure to meet you and be your mentor. You are an
       easy-going person and it was really nice to cooperate with you. You
       did a great job here and I wish you all the best in your future career.`,
       reviewerName: "Nikola Prečanica, BEE IT Serbia",
@@ -40,7 +40,7 @@ export default function SimpleSlider() {
     // },
     {
       imageName: "testimonial2",
-      desc: `  Dear Chadi, it was real pleasure meeting and collaborating with you 😊 Wish you all the best in upcoming professional succeses and looking forward to see you again 🍀 Keep bee-ing so full of positive energy, it's inspiring ❤`,
+      desc: `  Dear Amine, it was real pleasure meeting and collaborating with you 😊 Wish you all the best in upcoming professional succeses and looking forward to see you again 🍀 Keep bee-ing so full of positive energy, it's inspiring ❤`,
       reviewerName: "Sonja Tatarin Ragaji, BEE IT Serbia",
       link: "https://www.linkedin.com/in/sonja-tatarin-ragaji-064398162/",
     },

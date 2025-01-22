@@ -14,7 +14,7 @@ import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeTwo = () => {
   useDocumentTitle(
-    "Chadi Ayari, Full Stack Software Engineer, offering expertise in both mobile and web development. Check out mypersonal website to hire or consult."
+    "Mohamed Amine Koubaa, Game Developer and Backend Developer, specializing in creating immersive gaming experiences and robust backend systems. Explore my personal website to hire or consult.."
   );
   return (
     <div className="home-dark">
