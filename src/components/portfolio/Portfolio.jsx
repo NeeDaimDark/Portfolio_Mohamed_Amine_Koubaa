@@ -1,325 +1,129 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import SimpleReactLightbox from "simple-react-lightbox";
-import { SRLWrapper } from "simple-react-lightbox";
 
 const tabList = ["All", "Game Dev", "VR", "Machine Learning", "Mobile Dev"];
-const AllPortfolioContent = [
-  {
 
-    img: "1",
+const GameDevPortfolioContent = [
+  {
     title: "Dice Driven Journey",
     subTitle: "Unity - Node.js - MongoDB-Multiplayer",
-    alterText: "Dice Driven Journey",
-    portfolioLink: "", // Add link if available
-  },
-  {
-    img: "2",
-    title: "Haven",
-    subTitle: "Unity - VR - Node.js-Multiplayer",
-    alterText: "Haven VR Game",
-    portfolioLink: "", // Add link if available
-  },
-  {
-    img: "4",
-    title: "Music Genre Recognition",
-    subTitle: "Python - TensorFlow",
-    alterText: "Music Genre Recognition",
-    portfolioLink: "", // Add link if available
-  },
-  {
-    img: "5",
-    title: "Friends with Animals",
-    subTitle: "Flutter - Node.js - MongoDB",
-    alterText: "Friends with Animals App",
-    portfolioLink: "", // Add link if available
+    media: [
+      "img/portfolio/DiceDriven/0.png",
+      "img/portfolio/DiceDriven/1.png",
+      "img/portfolio/DiceDriven/2.png",
+      "img/portfolio/DiceDriven/3.png",
+      "img/portfolio/DiceDriven/4.png",
+      "img/portfolio/DiceDriven/5.png",
+      "img/portfolio/DiceDriven/6.png",
+      "img/portfolio/DiceDriven/7.png",
+      "img/portfolio/DiceDriven/8.png",
+      "img/portfolio/DiceDriven/9.png",
+      "img/portfolio/DiceDriven/10.png",
+      "img/portfolio/DiceDriven/11.png",
+      "img/portfolio/DiceDriven/12.png",
+      "img/portfolio/DiceDriven/13.png",
+      "img/portfolio/DiceDriven/14.png",
+      "img/portfolio/DiceDriven/15.png",
+      "img/portfolio/DiceDriven/16.png",
+      "img/portfolio/DiceDriven/trailer.mp4", // Video file
+    ],
+    alterText: "Dice Driven Journey Media",
   },
 ];
-const WebPortfolioContent = [
-  {
-
-    img: "1",
-    title: "Dice Driven Journey",
-    subTitle: "Unity - Node.js - MongoDB",
-    alterText: "Dice Driven Journey",
-    portfolioLink: "", // Add link if available
-  },
-];
-
-const MobilePortfolioContent = [{
-  img: "2",
-  title: "Haven",
-  subTitle: "Unity - VR - Node.js",
-  alterText: "Haven VR Game",
-  portfolioLink: "", // Add link if available
-},
-
-
-];
-const AiPortfolioContent = [
-  {
-    img: "4",
-    title: "Music Genre Recognition",
-    subTitle: "Python - TensorFlow",
-    alterText: "Music Genre Recognition",
-    portfolioLink: "", // Add link if available
-  },
-];
-const MobileDevContent =[
-  {
-    img: "5",
-    title: "Friends with Animals",
-    subTitle: "Flutter - Node.js - MongoDB",
-    alterText: "Friends with Animals App",
-    portfolioLink: "", // Add link if available
-  },
-]
 
 const Portfolio = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentMedia, setCurrentMedia] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openGallery = (media) => {
+    setCurrentMedia(media);
+    setCurrentIndex(0);
+    setIsOpen(true);
+  };
+
+  const closeGallery = () => {
+    setIsOpen(false);
+    setCurrentMedia([]);
+    setCurrentIndex(0);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % currentMedia.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + currentMedia.length) % currentMedia.length
+    );
+  };
+
   return (
-    <SimpleReactLightbox>
-      <div className="positon-relative">
-        <div className="portfolio-filter-01">
-          <Tabs>
-            <TabList className="filter d-flex justify-content-center">
-              {tabList.map((val, i) => (
-                <Tab key={i}>{val}</Tab>
-              ))}
-            </TabList>
-            {/* End tablist */}
+    <div className="portfolio-section">
+      <Tabs>
+        <TabList className="filter d-flex justify-content-center">
+          {tabList.map((val, i) => (
+            <Tab key={i}>{val}</Tab>
+          ))}
+        </TabList>
 
-            <SRLWrapper>
-              <TabPanel>
-                <div className="portfolio-content row lightbox-gallery">
-                  {AllPortfolioContent.map((val, i) => (
-                    <div
-                      className="col-sm-6 col-lg-4 grid-item product"
-                      key={i}
-                    >
-                      <div className="portfolio-box-01">
-                        <div className="portfolio-img">
-                          <div className="portfolio-info">
-                            <h5>
-                              <a href={val.portfolioLink} target="_blank">
-                                {val.title}
-                              </a>
-                            </h5>
-                            <span>{val.subTitle}</span>
-                          </div>
-                          {/* End .portfolio-info */}
-                          <a
-                            href={`img/portfolio/${val.img}.png`}
-                            className="gallery-link"
-                          >
-                            <img
-                              src={`img/portfolio/${val.img}.png`}
-                              alt={val.alterText}
-                            />
-                          </a>
-                          {/* End gallery link */}
-                          <a
-                            href={val.portfolioLink}
-                            className="portfolio-icon"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ti-link"></span>
-                          </a>
-                          {/* End .portfolio-icon */}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+        {/* Game Dev Section */}
+        <TabPanel>
+          <div className="portfolio-content row">
+            {GameDevPortfolioContent.map((project, i) => (
+              <div key={i} className="col-lg-4 grid-item">
+                <div className="portfolio-box-01">
+                  <div className="portfolio-img">
+                    <img
+                      src={project.media[0]} // Show the first image
+                      alt={project.alterText}
+                      onClick={() => openGallery(project.media)} // Open modal on click
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                  <div className="portfolio-info">
+                    <h5>{project.title}</h5>
+                    <p>{project.subTitle}</p>
+                  </div>
                 </div>
-                {/* End list wrapper */}
-              </TabPanel>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+      </Tabs>
 
-              <TabPanel>
-                <div className="portfolio-content row lightbox-gallery">
-                  {WebPortfolioContent.map((val, i) => (
-                    <div
-                      className="col-sm-6 col-lg-4 grid-item product"
-                      key={i}
-                    >
-                      <div className="portfolio-box-01">
-                        <div className="portfolio-img">
-                          <div className="portfolio-info">
-                            <h5>
-                              <a href={val.portfolioLink} target="_blank">
-                                {val.title}
-                              </a>
-                            </h5>
-                            <span>{val.subTitle}</span>
-                          </div>
-                          {/* End .portfolio-info */}
-                          <a
-                            href={`img/portfolio/${val.img}.png`}
-                            className="gallery-link"
-                          >
-                            <img
-                              src={`img/portfolio/${val.img}.png`}
-                              alt={val.alterText}
-                            />
-                          </a>
-                          {/* End gallery link */}
-                          <a
-                            href={val.portfolioLink}
-                            className="portfolio-icon"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ti-link"></span>
-                          </a>
-                          {/* End .portfolio-icon */}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                {/* End list wrapper */}
-              </TabPanel>
+      {/* Modal for Gallery */}
+      {isOpen && (
+        <div className="gallery-modal">
+          <button className="close-button" onClick={closeGallery}>
+            Close
+          </button>
 
-              <TabPanel>
-                <div className="portfolio-content row lightbox-gallery">
-                  {MobilePortfolioContent.map((val, i) => (
-                    <div
-                      className="col-sm-6 col-lg-4 grid-item product"
-                      key={i}
-                    >
-                      <div className="portfolio-box-01">
-                        <div className="portfolio-img">
-                          <div className="portfolio-info">
-                            <h5>
-                              <a href={val.portfolioLink} target="_blank">
-                                {val.title}
-                              </a>
-                            </h5>
-                            <span>{val.subTitle}</span>
-                          </div>
-                          {/* End .portfolio-info */}
-                          <a
-                            href={`img/portfolio/${val.img}.png`}
-                            className="gallery-link"
-                          >
-                            <img
-                              src={`img/portfolio/${val.img}.png`}
-                              alt={val.alterText}
-                            />
-                          </a>
-                          {/* End gallery link */}
-                          <a
-                            href={val.portfolioLink}
-                            className="portfolio-icon"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ti-link"></span>
-                          </a>
-                          {/* End .portfolio-icon */}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                {/* End list wrapper */}
-              </TabPanel>
+          <div className="gallery-content">
+            {currentMedia[currentIndex].endsWith(".mp4") ? (
+              <video controls className="media-display">
+                <source src={currentMedia[currentIndex]} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={currentMedia[currentIndex]}
+                alt={`Media ${currentIndex}`}
+                className="media-display"
+              />
+            )}
+          </div>
 
-              <TabPanel>
-                <div className="portfolio-content row lightbox-gallery">
-                  {AiPortfolioContent.map((val, i) => (
-                    <div
-                      className="col-sm-6 col-lg-4 grid-item product"
-                      key={i}
-                    >
-                      <div className="portfolio-box-01">
-                        <div className="portfolio-img">
-                          <div className="portfolio-info">
-                            <h5>
-                              <a href={val.portfolioLink} target="_blank">
-                                {val.title}
-                              </a>
-                            </h5>
-                            <span>{val.subTitle}</span>
-                          </div>
-                          {/* End .portfolio-info */}
-                          <a
-                            href={`img/portfolio/${val.img}.png`}
-                            className="gallery-link"
-                          >
-                            <img
-                              src={`img/portfolio/${val.img}.png`}
-                              alt={val.alterText}
-                            />
-                          </a>
-                          {/* End gallery link */}
-                          <a
-                            href={val.portfolioLink}
-                            className="portfolio-icon"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="ti-link"></span>
-                          </a>
-                          {/* End .portfolio-icon */}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                  {/* grid item  */}
-                </div>
-                {/* End list wrapper */}
-              </TabPanel>
-              <TabPanel>
-                <div className="portfolio-content row lightbox-gallery">
-                  {MobileDevContent.map((val, i) => (
-                      <div
-                          className="col-sm-6 col-lg-4 grid-item product"
-                          key={i}
-                      >
-                        <div className="portfolio-box-01">
-                          <div className="portfolio-img">
-                            <div className="portfolio-info">
-                              <h5>
-                                <a href={val.portfolioLink} target="_blank">
-                                  {val.title}
-                                </a>
-                              </h5>
-                              <span>{val.subTitle}</span>
-                            </div>
-                            {/* End .portfolio-info */}
-                            <a
-                                href={`img/portfolio/${val.img}.png`}
-                                className="gallery-link"
-                            >
-                              <img
-                                  src={`img/portfolio/${val.img}.png`}
-                                  alt={val.alterText}
-                              />
-                            </a>
-                            {/* End gallery link */}
-                            <a
-                                href={val.portfolioLink}
-                                className="portfolio-icon"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                              <span className="ti-link"></span>
-                            </a>
-                            {/* End .portfolio-icon */}
-                          </div>
-                        </div>
-                      </div>
-                  ))}
-                </div>
-                {/* End list wrapper */}
-              </TabPanel>
-
-            </SRLWrapper>
-            {/* End tabpanel */}
-          </Tabs>
+          <div className="gallery-controls">
+            <button className="gallery-button" onClick={handlePrevious}>
+              -
+            </button>
+            <button className="gallery-button" onClick={handleNext}>
+              +
+            </button>
+          </div>
         </div>
-      </div>
-    </SimpleReactLightbox>
+      )}
+    </div>
   );
 };
 

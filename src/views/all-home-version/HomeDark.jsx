@@ -5,7 +5,7 @@ import About from "../../components/about/About";
 import Service from "../../components/service/Service";
 import Skills from "../../components/skills/Skills";
 import Portfolio from "../../components/portfolio/Portfolio";
-import Testimonial from "../../components/testimonial/Testimonial";
+
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
@@ -67,12 +67,7 @@ const HomeTwo = () => {
       </section>
       {/* End Portfolio */}
 
-      <div className="section testimonial">
-        <div className="container">
-          <Testimonial />
-        </div>
-      </div>
-      {/* End testimonial */}
+   
 
       {/* Blog */}
       {/* <section id="blog" className="section gray-bg">
