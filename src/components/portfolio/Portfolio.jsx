@@ -54,6 +54,38 @@ const VRPortfolioContent = [
   },
 ];
 
+const MLPortfolioContent = [
+  {
+    title: "Music Genre Recognition",
+    subTitle: "Python - Google Colab - CNN - MFCC",
+    media: [
+      "img/portfolio/MusGenRec/0.png",
+      "img/portfolio/MusGenRec/1.png",
+      "img/portfolio/MusGenRec/2.png",
+      "img/portfolio/MusGenRec/3.png",
+      "img/portfolio/MusGenRec/4.png",
+      "img/portfolio/MusGenRec/5.png",
+      "img/portfolio/MusGenRec/6.png",
+      "img/portfolio/MusGenRec/7.png",
+      "img/portfolio/MusGenRec/8.png",
+      "img/portfolio/MusGenRec/9.png",
+      "img/portfolio/MusGenRec/10.png",
+      "img/portfolio/MusGenRec/11.png",
+      "img/portfolio/MusGenRec/12.png",
+      "img/portfolio/MusGenRec/13.png",
+      "img/portfolio/MusGenRec/14.png",
+      "img/portfolio/MusGenRec/15.png",
+      "img/portfolio/MusGenRec/16.png",
+      "img/portfolio/MusGenRec/17.png",
+      "img/portfolio/MusGenRec/18.png",
+      "img/portfolio/MusGenRec/19.png",
+      "img/portfolio/MusGenRec/20.png",
+      "img/portfolio/MusGenRec/21.png",
+    ],
+    alterText: "Music Genre Recognition Media",
+  },
+];
+
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentMedia, setCurrentMedia] = useState([]);
@@ -118,6 +150,30 @@ const Portfolio = () => {
         <TabPanel>
           <div className="portfolio-content row">
             {VRPortfolioContent.map((project, i) => (
+              <div key={i} className="col-lg-4 grid-item">
+                <div className="portfolio-box-01">
+                  <div className="portfolio-img">
+                    <img
+                      src={project.media[0]} // Show the first image
+                      alt={project.alterText}
+                      onClick={() => openGallery(project.media)} // Open modal on click
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                  <div className="portfolio-info">
+                    <h5>{project.title}</h5>
+                    <p>{project.subTitle}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+
+        {/* Machine Learning Section */}
+        <TabPanel>
+          <div className="portfolio-content row">
+            {MLPortfolioContent.map((project, i) => (
               <div key={i} className="col-lg-4 grid-item">
                 <div className="portfolio-box-01">
                   <div className="portfolio-img">
