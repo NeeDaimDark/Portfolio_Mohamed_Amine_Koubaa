@@ -12,12 +12,7 @@ const ServiceContent = [ {
     service: "BACKEND DEVELOPMENT",
     title: "Building efficient server-side solutions.",
   },
-  {
-    icon: "ti-desktop",
-    no: "03",
-    service: "FULL-STACK DEVELOPMENT",
-    title: "Developing web and mobile applications.",
-  },
+  
   {
     icon: "ti-stats-up",
     no: "04",

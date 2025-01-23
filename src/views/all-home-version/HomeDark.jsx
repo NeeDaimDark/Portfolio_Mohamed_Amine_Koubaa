@@ -5,7 +5,7 @@ import About from "../../components/about/About";
 import Service from "../../components/service/Service";
 import Skills from "../../components/skills/Skills";
 import Portfolio from "../../components/portfolio/Portfolio";
-import Testimonial from "../../components/testimonial/Testimonial";
+
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
@@ -14,7 +14,7 @@ import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeTwo = () => {
   useDocumentTitle(
-    "Chadi Ayari, Full Stack Software Engineer, offering expertise in both mobile and web development. Check out mypersonal website to hire or consult."
+    "Mohamed Amine Koubaa, Game Developer and Backend Developer, specializing in creating immersive gaming experiences and robust backend systems. Explore my personal website to hire or consult.."
   );
   return (
     <div className="home-dark">
@@ -67,12 +67,7 @@ const HomeTwo = () => {
       </section>
       {/* End Portfolio */}
 
-      <div className="section testimonial">
-        <div className="container">
-          <Testimonial />
-        </div>
-      </div>
-      {/* End testimonial */}
+   
 
       {/* Blog */}
       {/* <section id="blog" className="section gray-bg">
@@ -122,9 +117,8 @@ const HomeTwo = () => {
                     <i className="ti-map"></i>
                   </div>
                   <span className="media-body">
-                    Pillai Hostel, Navi Mumbai
-                    <br />
-                    India 410206 <br />
+                   Tunis,Tunisia
+                   
                   </span>
                 </div>
                 {/* End media */}
@@ -144,8 +138,9 @@ const HomeTwo = () => {
                     <i className="ti-mobile"></i>
                   </div>
                   <span className="media-body">
-                    Mobile: +91 89762 48003 <br />
-                    WhatsApp: +216 53 180 256
+                    Mobile: +216 58 701 286 <br />
+                    Mobile: (+971) 50 146 7976 <br />
+                    WhatsApp: +216 56 631 205
                   </span>
                 </div>
                 {/* End media */}
