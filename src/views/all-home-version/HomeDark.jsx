@@ -117,9 +117,8 @@ const HomeTwo = () => {
                     <i className="ti-map"></i>
                   </div>
                   <span className="media-body">
-                    Pillai Hostel, Navi Mumbai
-                    <br />
-                    India 410206 <br />
+                   Tunis,Tunisia
+                   
                   </span>
                 </div>
                 {/* End media */}
@@ -139,8 +138,9 @@ const HomeTwo = () => {
                     <i className="ti-mobile"></i>
                   </div>
                   <span className="media-body">
-                    Mobile: +91 89762 48003 <br />
-                    WhatsApp: +216 53 180 256
+                    Mobile: +216 58 701 286 <br />
+                    Mobile: (+971) 50 146 7976 <br />
+                    WhatsApp: +216 56 631 205
                   </span>
                 </div>
                 {/* End media */}

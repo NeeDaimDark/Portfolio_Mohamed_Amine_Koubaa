@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0e461c1-b1ea-43f3-b26e-22f33ea1ba92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/amine_Resume.cc393d1c.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amine_Resume.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/all-home-version/HomeDark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/all-home-version/HomeDark.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +70,7 @@
       <workItem from="1737220465847" duration="746000" />
       <workItem from="1737377398329" duration="6056000" />
       <workItem from="1737566800790" duration="603000" />
+      <workItem from="1737672086525" duration="669000" />
     </task>
     <servers />
   </component>
