@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-const tabList = ["All", "Game Dev", "VR", "Machine Learning", "Mobile Dev"];
+const tabList = ["All", "Game Dev", "VR", "Machine Learning"];
 
 const GameDevPortfolioContent = [
   {
@@ -28,6 +28,29 @@ const GameDevPortfolioContent = [
       "img/portfolio/DiceDriven/trailer.mp4", // Video file
     ],
     alterText: "Dice Driven Journey Media",
+  },
+];
+
+const VRPortfolioContent = [
+  {
+    title: "Haven",
+    subTitle: "Unity - Node.js - MongoDB - Oculus Quest",
+    media: [
+      "img/portfolio/Haven/0.png",
+      "img/portfolio/Haven/1.png",
+      "img/portfolio/Haven/2.png",
+      "img/portfolio/Haven/3.png",
+      "img/portfolio/Haven/4.png",
+      "img/portfolio/Haven/5.png",
+      "img/portfolio/Haven/6.png",
+      "img/portfolio/Haven/7.png",
+      "img/portfolio/Haven/8.png",
+      "img/portfolio/Haven/9.png",
+      "img/portfolio/Haven/10.png",
+      "img/portfolio/Haven/11.png",
+      "img/portfolio/Haven/trailer.mp4", // Video file
+    ],
+    alterText: "Haven Media",
   },
 ];
 
@@ -71,6 +94,30 @@ const Portfolio = () => {
         <TabPanel>
           <div className="portfolio-content row">
             {GameDevPortfolioContent.map((project, i) => (
+              <div key={i} className="col-lg-4 grid-item">
+                <div className="portfolio-box-01">
+                  <div className="portfolio-img">
+                    <img
+                      src={project.media[0]} // Show the first image
+                      alt={project.alterText}
+                      onClick={() => openGallery(project.media)} // Open modal on click
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                  <div className="portfolio-info">
+                    <h5>{project.title}</h5>
+                    <p>{project.subTitle}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+
+        {/* VR Section */}
+        <TabPanel>
+          <div className="portfolio-content row">
+            {VRPortfolioContent.map((project, i) => (
               <div key={i} className="col-lg-4 grid-item">
                 <div className="portfolio-box-01">
                   <div className="portfolio-img">
