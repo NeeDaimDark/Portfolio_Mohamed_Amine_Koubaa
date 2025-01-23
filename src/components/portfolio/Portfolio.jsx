@@ -34,7 +34,7 @@ const GameDevPortfolioContent = [
 const VRPortfolioContent = [
   {
     title: "Haven",
-    subTitle: "Unity - Node.js - MongoDB - Oculus Quest",
+    subTitle: "Unity - Node.js - MongoDB - Oculus Quest -Mirror Networking -Multiplayer",
     media: [
       "img/portfolio/Haven/0.png",
       "img/portfolio/Haven/1.png",
@@ -86,6 +86,13 @@ const MLPortfolioContent = [
   },
 ];
 
+// Combine all content for the "All" section
+const AllPortfolioContent = [
+  ...GameDevPortfolioContent,
+  ...VRPortfolioContent,
+  ...MLPortfolioContent,
+];
+
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentMedia, setCurrentMedia] = useState([]);
@@ -122,6 +129,30 @@ const Portfolio = () => {
           ))}
         </TabList>
 
+        {/* All Section */}
+        <TabPanel>
+          <div className="portfolio-content row">
+            {AllPortfolioContent.map((project, i) => (
+              <div key={i} className="col-lg-4 grid-item">
+                <div className="portfolio-box-01">
+                  <div className="portfolio-img">
+                    <img
+                      src={project.media[0]} // Show the first image
+                      alt={project.alterText}
+                      onClick={() => openGallery(project.media)} // Open modal on click
+                      style={{ cursor: "pointer" }}
+                    />
+                  </div>
+                  <div className="portfolio-info">
+                    <h5>{project.title}</h5>
+                    <p>{project.subTitle}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </TabPanel>
+
         {/* Game Dev Section */}
         <TabPanel>
           <div className="portfolio-content row">
@@ -130,9 +161,9 @@ const Portfolio = () => {
                 <div className="portfolio-box-01">
                   <div className="portfolio-img">
                     <img
-                      src={project.media[0]} // Show the first image
+                      src={project.media[0]}
                       alt={project.alterText}
-                      onClick={() => openGallery(project.media)} // Open modal on click
+                      onClick={() => openGallery(project.media)}
                       style={{ cursor: "pointer" }}
                     />
                   </div>
@@ -154,9 +185,9 @@ const Portfolio = () => {
                 <div className="portfolio-box-01">
                   <div className="portfolio-img">
                     <img
-                      src={project.media[0]} // Show the first image
+                      src={project.media[0]}
                       alt={project.alterText}
-                      onClick={() => openGallery(project.media)} // Open modal on click
+                      onClick={() => openGallery(project.media)}
                       style={{ cursor: "pointer" }}
                     />
                   </div>
@@ -178,9 +209,9 @@ const Portfolio = () => {
                 <div className="portfolio-box-01">
                   <div className="portfolio-img">
                     <img
-                      src={project.media[0]} // Show the first image
+                      src={project.media[0]}
                       alt={project.alterText}
-                      onClick={() => openGallery(project.media)} // Open modal on click
+                      onClick={() => openGallery(project.media)}
                       style={{ cursor: "pointer" }}
                     />
                   </div>
