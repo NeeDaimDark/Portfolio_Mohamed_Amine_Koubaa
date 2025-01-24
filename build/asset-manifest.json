@@ -1,27 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio_Mohamed_Amine_Koubaa/static/css/main.e87179db.chunk.css",
-    "main.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/main.d5b1de40.chunk.js",
-    "main.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/main.d5b1de40.chunk.js.map",
-    "runtime-main.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/runtime-main.23cd5fdf.js",
-    "runtime-main.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/runtime-main.23cd5fdf.js.map",
-    "static/css/2.ec02d681.chunk.css": "/Portfolio_Mohamed_Amine_Koubaa/static/css/2.ec02d681.chunk.css",
-    "static/js/2.ddc74850.chunk.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/2.ddc74850.chunk.js",
-    "static/js/2.ddc74850.chunk.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/2.ddc74850.chunk.js.map",
-    "static/js/3.ee540e25.chunk.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/3.ee540e25.chunk.js",
-    "static/js/3.ee540e25.chunk.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/3.ee540e25.chunk.js.map",
+    "main.css": "/Portfolio_Mohamed_Amine_Koubaa/static/css/main.29e12615.css",
+    "main.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/main.03df9ddb.js",
+    "static/js/453.1e3ff41f.chunk.js": "/Portfolio_Mohamed_Amine_Koubaa/static/js/453.1e3ff41f.chunk.js",
+    "static/media/amine_Resume.pdf": "/Portfolio_Mohamed_Amine_Koubaa/static/media/amine_Resume.6a884bd01b4e5418ab10.pdf",
+    "static/media/icomoon.ttf?8mc8ao": "/Portfolio_Mohamed_Amine_Koubaa/static/media/icomoon.26fba05603ddcf5a7c48.ttf",
     "index.html": "/Portfolio_Mohamed_Amine_Koubaa/index.html",
-    "static/css/2.ec02d681.chunk.css.map": "/Portfolio_Mohamed_Amine_Koubaa/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.e87179db.chunk.css.map": "/Portfolio_Mohamed_Amine_Koubaa/static/css/main.e87179db.chunk.css.map",
-    "static/js/2.ddc74850.chunk.js.LICENSE.txt": "/Portfolio_Mohamed_Amine_Koubaa/static/js/2.ddc74850.chunk.js.LICENSE.txt",
-    "static/media/amine_Resume.6a884bd0.pdf": "/Portfolio_Mohamed_Amine_Koubaa/static/media/amine_Resume.6a884bd0.pdf",
-    "static/media/main.scss": "/Portfolio_Mohamed_Amine_Koubaa/static/media/icomoon.26fba056.ttf"
+    "main.29e12615.css.map": "/Portfolio_Mohamed_Amine_Koubaa/static/css/main.29e12615.css.map",
+    "main.03df9ddb.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/main.03df9ddb.js.map",
+    "453.1e3ff41f.chunk.js.map": "/Portfolio_Mohamed_Amine_Koubaa/static/js/453.1e3ff41f.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.23cd5fdf.js",
-    "static/css/2.ec02d681.chunk.css",
-    "static/js/2.ddc74850.chunk.js",
-    "static/css/main.e87179db.chunk.css",
-    "static/js/main.d5b1de40.chunk.js"
+    "static/css/main.29e12615.css",
+    "static/js/main.03df9ddb.js"
   ]
 }
