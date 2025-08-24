@@ -18,14 +18,14 @@ const About = () => {
           <div className="typo-box about-me">
             <h5>Mohamed Amine Koubaa</h5>
             <h3>
-              Software Engineer and <span className="color-theme">Game Developer</span>
+              Software Engineer and <span className="color-theme">FullStack Developer (Mobile Application / Web )</span>
             </h3>
-            <p>I specialize in video game development and  backend solutions, creating immersive experiences and efficient systems.</p>
+            <p>I specialize in video Mobile development and  backend solutions, creating immersive experiences and efficient systems.</p>
             <div className="row about-list">
               <div className="col-md-6">
                 <div className="media">
                   <label>Age</label>
-                  <p>26 Years</p>
+                  <p>27 Years</p>
                 </div>
                 <div className="media">
                   <label>Origin</label>

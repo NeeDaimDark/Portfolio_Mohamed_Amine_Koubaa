@@ -51,7 +51,7 @@
 .portfolio-box-01 {
   background: white;
   padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 15px 0;
   position: relative;
 }
@@ -142,80 +142,309 @@
   color: #fff;
 }
 
-.gallery-modal .close-button {
+/* Modern Close Button - Matching Gallery Buttons */
+.gallery-close-button {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  background: #ff5555;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  top: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  z-index: 1002;
+  overflow: hidden;
+}
+
+.gallery-close-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-close-button:hover::before {
+  opacity: 1;
+}
+
+.gallery-close-button:hover {
+  background: linear-gradient(135deg, rgba(255, 80, 80, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-color: rgba(255, 100, 100, 0.3);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow:
+    0 16px 32px rgba(255, 80, 80, 0.15),
+    0 6px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.gallery-close-button:active {
+  transform: translateY(0) scale(1.02);
+  transition: all 0.15s ease;
+}
+
+.gallery-close-icon {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1;
+  user-select: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-close-button:hover .gallery-close-icon {
+  transform: scale(1.1) rotate(90deg);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #ffcccb;
+}
+
+/* Mobile responsive adjustments for close button */
+@media (max-width: 768px) {
+  .gallery-close-button {
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .gallery-close-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-close-button {
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .gallery-close-icon {
+    font-size: 18px;
+  }
+}
+
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-content .media-display {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 50%;
+  max-height: 70%;
   width: auto;
   height: auto;
   margin: auto;
+  object-fit: contain;
+  display: block;
 }
 
-/* Adjust the buttons for left and right positioning */
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-content .media-display {
+    max-width: 80%;
+    max-height: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-content .media-display {
+    max-width: 90%;
+    max-height: 55%;
+  }
+}
+
+/* For portrait images (like mobile app screenshots) */
+@media (orientation: portrait) {
+  .gallery-content .media-display {
+    max-width: 40%;
+    max-height: 75%;
+  }
+}
+
+/* For landscape orientation */
+@media (orientation: landscape) {
+  .gallery-content .media-display {
+    max-width: 60%;
+    max-height: 65%;
+  }
+}
+
+/* Gallery Controls - Ultra Modern Design */
 .gallery-controls {
   position: absolute;
-  top: 50%; /* Center vertically */
-  width: 100%; /* Full width for button placement */
+  top: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between; /* Place buttons at the edges */
+  justify-content: space-between;
   align-items: center;
-  transform: translateY(-50%); /* Adjust for vertical centering */
-  z-index: 1001; /* Ensure it stays above content */
+  transform: translateY(-50%);
+  z-index: 1001;
+  pointer-events: none;
+  padding: 0 40px;
 }
 
 .gallery-button {
-  background-color: grey;
-  color: white;
-  border: none;
-  font-size: 28px;
-  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: auto;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-button:hover::before {
+  opacity: 1;
 }
 
 .gallery-button:hover {
-  background-color: darkgrey;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 8px 16px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.gallery-button:active {
+  transform: translateY(-1px) scale(1.02);
+  transition: all 0.15s ease;
+}
+
+.gallery-button-icon {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  user-select: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-button:hover .gallery-button-icon {
   transform: scale(1.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Left button positioning */
-.gallery-button.left {
-  position: absolute;
-  left: 20px; /* Adjust distance from the left edge */
+.gallery-button-prev .gallery-button-icon {
+  transform: translateX(-1px);
 }
 
-/* Right button positioning */
-.gallery-button.right {
-  position: absolute;
-  right: 20px; /* Adjust distance from the right edge */
+.gallery-button-next .gallery-button-icon {
+  transform: translateX(1px);
 }
 
-/* Media query for responsiveness */
-@media (max-width: 768px) {
+/* Enhanced hover effects for specific buttons */
+.gallery-button-prev:hover .gallery-button-icon {
+  transform: translateX(-2px) scale(1.1);
+}
+
+.gallery-button-next:hover .gallery-button-icon {
+  transform: translateX(2px) scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .gallery-controls {
+    padding: 0 30px;
+  }
+
   .gallery-button {
+    width: 56px;
+    height: 56px;
+  }
+
+  .gallery-button-icon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-controls {
+    padding: 0 25px;
+  }
+
+  .gallery-button {
+    width: 52px;
+    height: 52px;
+  }
+
+  .gallery-button-icon {
     font-size: 20px;
-    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-controls {
+    padding: 0 20px;
   }
 
-  .gallery-button.left {
-    left: 10px; /* Adjust for smaller screens */
+  .gallery-button {
+    width: 48px;
+    height: 48px;
   }
 
-  .gallery-button.right {
-    right: 10px; /* Adjust for smaller screens */
+  .gallery-button-icon {
+    font-size: 18px;
   }
+}
+
+/* Focus states for accessibility */
+.gallery-button:focus {
+  outline: none;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 8px 16px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 0 3px rgba(255, 255, 255, 0.3);
 }
 
 /* Animations */
@@ -249,5 +478,103 @@
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Certificate Section Styles */
+.certificate-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+}
+
+.certificate-item {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.certificate-badge {
+  margin-bottom: 15px;
+}
+
+.certificate-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-info h6 {
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 5px 0;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.certificate-info p {
+  color: #666;
+  font-size: 12px;
+  margin: 5px 0 15px 0;
+}
+
+.certificate-link {
+  display: inline-block;
+  background: #dc965a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.certificate-link:hover {
+  background: #c8814a;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 150, 90, 0.3);
+}
+
+/* Mobile responsive adjustments for certificates */
+@media (max-width: 992px) {
+  .certificate-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .certificate-info h6 {
+    font-size: 13px;
+  }
+
+  .certificate-info p {
+    font-size: 11px;
+  }
+
+  .certificate-link {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate-box {
+    padding: 15px;
+  }
+
+  .certificate-image {
+    width: 80px;
+    height: 80px;
   }
 }

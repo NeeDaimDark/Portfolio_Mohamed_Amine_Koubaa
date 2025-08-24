@@ -139,7 +139,6 @@ const HomeTwo = () => {
                   </div>
                   <span className="media-body">
                     Mobile: +216 58 701 286 <br />
-                    Mobile: (+971) 50 146 7976 <br />
                     WhatsApp: +216 56 631 205
                   </span>
                 </div>

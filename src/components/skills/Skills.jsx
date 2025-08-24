@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <>
       <div className="row">
-        <div className="col-lg-4 my-3">
+        <div className="col-lg-3 my-3">
           <div className="sm-title">
             <h4 className="font-alt">Work Experience</h4>
           </div>
@@ -56,7 +56,7 @@ const Skills = () => {
           {/* End  .aducation-box */}
         </div>
         {/* End .col */}
-        <div className="col-lg-4 my-3">
+        <div className="col-lg-3 my-3">
           <div className="sm-title">
             <h4 className="font-alt">Education</h4>
           </div>
@@ -90,14 +90,44 @@ const Skills = () => {
         </div>
         {/* End .col */}
 
-        <div className="col-lg-4 ml-auto my-3">
+        <div className="col-lg-3 my-3">
+          <div className="sm-title">
+            <h4 className="font-alt">Certificates</h4>
+          </div>
+          <div className="certificate-box">
+            <div className="certificate-item">
+              <div className="certificate-badge">
+                <img
+                  src={process.env.PUBLIC_URL + "/img/certificate/aviatrix.png"}
+                  alt="Aviatrix Multicloud Network Associate Badge"
+                  className="certificate-image"
+                />
+              </div>
+              <div className="certificate-info">
+                <h6>Aviatrix Multicloud Network Associate</h6>
+                <p>Cloud Networking Certification</p>
+                <a
+                  href={process.env.PUBLIC_URL + "/img/certificate/aviatrix.pdf"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-link"
+                >
+                  View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End .col */}
+
+        <div className="col-lg-3 ml-auto my-3">
           <div className="sm-title">
             <h4 className="font-alt">Skills</h4>
           <div className="skill-lt">
-            <h6>Unity Engine</h6>
+            <h6>Flutter</h6>
             <div className="skill-bar">
-              <div className="skill-bar-in theme-bg" style={{width: "95%"}}>
-                <span>75%</span>
+              <div className="skill-bar-in theme-bg" style={{width: "80%"}}>
+                <span>80%</span>
               </div>
             </div>
           </div>
@@ -118,18 +148,18 @@ const Skills = () => {
             </div>
           </div>
           <div className="skill-lt">
-            <h6>Flutter</h6>
+            <h6>Next.js</h6>
             <div className="skill-bar">
-              <div className="skill-bar-in theme-bg" style={{width: "60%"}}>
-                <span>60%</span>
+              <div className="skill-bar-in theme-bg" style={{width: "50%"}}>
+                <span>50%</span>
               </div>
             </div>
           </div>
           <div className="skill-lt">
-            <h6>Unreal Engine</h6>
+            <h6>Unity Engine</h6>
             <div className="skill-bar">
-              <div className="skill-bar-in theme-bg" style={{width: "40%"}}>
-                <span>40%</span>
+              <div className="skill-bar-in theme-bg" style={{width: "50%"}}>
+                <span>50%</span>
               </div>
             </div>
           </div>

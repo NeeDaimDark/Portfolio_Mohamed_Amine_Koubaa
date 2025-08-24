@@ -26,7 +26,7 @@ const Slider = () => {
                   <br /> I'm Mohamed Amine Koubaa<br /> a{" "}
                   <TextLoop>
                     <span className="loop-text">Software  Engineer</span>
-                    <span className="loop-text"> Game Developer</span>
+                    <span className="loop-text"> Fullstack Developer</span>
                   </TextLoop>{" "}
 
                 </h1>
