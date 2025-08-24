@@ -5,119 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e461c1-b1ea-43f3-b26e-22f33ea1ba92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/certificate/aviatrix.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/certificate/aviatrix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/Description.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/database.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/database1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/portfolio/Novio/noteicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/404-page.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/about/about-me.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/about/about.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/banner/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/blog/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/blog/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/blog/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/cancel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/logo/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/DiceDriven/trailer.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/Haven/trailer.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/portfolio/MusGenRec/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/signature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/testimonial1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/testimonial/testimonial2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.29e12615.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.29e12615.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/453.1e3ff41f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/453.1e3ff41f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.03df9ddb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.03df9ddb.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.03df9ddb.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/amine_Resume.6a884bd01b4e5418ab10.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icomoon.26fba05603ddcf5a7c48.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/logo/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/main/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/main/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/main/_portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/main/_portfolio.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/about/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portfolio/Portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/Portfolio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/service/Service.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service/Service.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skills/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skills/Skills.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/SliderTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/SliderTwo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/all-home-version/HomeDark.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/all-home-version/HomeDark.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +62,7 @@
       <recent name="C:\Users\medam\Desktop\Portfolio\personalwebsite\public\img\logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Portfolio\Portfolio_Mohamed_Amine_Koubaa\src" />
       <recent name="C:\Users\MSI\Portfolio\Portfolio_Mohamed_Amine_Koubaa\public\img\logo" />
       <recent name="C:\Users\MSI\Portfolio\Portfolio_Mohamed_Amine_Koubaa\public\img\certificate" />
       <recent name="C:\Users\MSI\Portfolio\Portfolio_Mohamed_Amine_Koubaa\public\img\portfolio\Novio" />
@@ -237,7 +128,7 @@
       <workItem from="1737672086525" duration="669000" />
       <workItem from="1737720403869" duration="351000" />
       <workItem from="1756039889269" duration="165000" />
-      <workItem from="1756040083565" duration="11784000" />
+      <workItem from="1756040083565" duration="12456000" />
     </task>
     <servers />
   </component>
