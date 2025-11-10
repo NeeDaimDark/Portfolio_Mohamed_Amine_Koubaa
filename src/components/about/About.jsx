@@ -1,5 +1,6 @@
 import React from "react";
-import pdf from "../../amine_Resume.pdf";
+import pdfEnglish from "../../amineResumeAnglais.pdf";
+import pdfFrench from "../../amineResumeFrancais.pdf";
 
 const About = () => {
   return (
@@ -66,12 +67,21 @@ const About = () => {
             <div className="btn-bar">
               <a
                 className="px-btn px-btn-theme"
-                href={pdf}
+                href={pdfEnglish}
                 target="_blank"
                 rel="noreferrer"
                 download
               >
-                Download Resume
+                Download Resume (English)
+              </a>
+              <a
+                className="px-btn px-btn-theme"
+                href={pdfFrench}
+                target="_blank"
+                rel="noreferrer"
+                download
+              >
+                Download Resume (French)
               </a>
             </div>
           </div>

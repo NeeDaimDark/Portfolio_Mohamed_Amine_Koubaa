@@ -4,11 +4,34 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 const tabList = ["All", "Mobile Application","Game Dev", "VR", "Machine Learning"];
 const MobileAppPortfolioContent = [
   {
+    title: "Chat App",
+    subTitle: "Flutter - Firebase - Real-time Chat Application",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/ChatApp/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ChatApp/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ChatApp/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ChatApp/4.mp4",
+      process.env.PUBLIC_URL + "/img/portfolio/ChatApp/5.mp4",
+    ],
+    alterText: "Chat App Media",
+  },
+  {
+    title: "Favorite Places",
+    subTitle: "Flutter - SQLite - Location Tracking App",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/4.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/5.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/FavPlaces/3.mp4",
+    ],
+    alterText: "Favorite Places App Media",
+  },
+  {
     title: "Nuvio",
     subTitle: "Flutter - Firebase - Note Taking App",
     media: [
-      process.env.PUBLIC_URL + "/img/portfolio/Novio/noteicon.png",
-      process.env.PUBLIC_URL + "/img/portfolio/Novio/Description.png",
       process.env.PUBLIC_URL + "/img/portfolio/Novio/0.png",
       process.env.PUBLIC_URL + "/img/portfolio/Novio/1.png",
       process.env.PUBLIC_URL + "/img/portfolio/Novio/2.png",
@@ -21,10 +44,55 @@ const MobileAppPortfolioContent = [
       process.env.PUBLIC_URL + "/img/portfolio/Novio/9.png",
       process.env.PUBLIC_URL + "/img/portfolio/Novio/10.png",
       process.env.PUBLIC_URL + "/img/portfolio/Novio/11.png",
-      process.env.PUBLIC_URL + "/img/portfolio/Novio/database.png",
-      process.env.PUBLIC_URL + "/img/portfolio/Novio/database1.png",
+    
     ],
     alterText: "Nuvio Mobile App Media",
+  },
+  {
+    title: "Meals App",
+    subTitle: "Flutter - Recipe & Meals Management App",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/MealsApp/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/MealsApp/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/MealsApp/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/MealsApp/4.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/MealsApp/0.mp4",
+    ],
+    alterText: "Meals App Media",
+  },
+  {
+    title: "Expenses App",
+    subTitle: "Flutter - Personal Finance Tracker",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/ExpansesApp/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ExpansesApp/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ExpansesApp/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ExpansesApp/4.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ExpansesApp/0.mp4",
+    ],
+    alterText: "Expenses App Media",
+  },
+  {
+    title: "Shopping List App",
+    subTitle: "Flutter - Shopping Management App",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/ShoppingListApp/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ShoppingListApp/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ShoppingListApp/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/ShoppingListApp/0.mp4",
+    ],
+    alterText: "Shopping List App Media",
+  },
+  {
+    title: "Quiz App",
+    subTitle: "Flutter - Interactive Quiz Application",
+    media: [
+      process.env.PUBLIC_URL + "/img/portfolio/QuizApp/1.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/QuizApp/2.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/QuizApp/3.jpg",
+      process.env.PUBLIC_URL + "/img/portfolio/QuizApp/1.mp4",
+    ],
+    alterText: "Quiz App Media",
   },
 ];
 const GameDevPortfolioContent = [
