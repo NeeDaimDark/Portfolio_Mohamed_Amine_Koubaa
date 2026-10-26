@@ -7,6 +7,7 @@ $modal-muted: rgba(255, 255, 255, 0.65);
 .case-study-card {
   display: block;
   width: 100%;
+  height: calc(100% - 30px);
   padding: 0;
   border: 0;
   background: none;
