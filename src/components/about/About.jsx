@@ -20,12 +20,7 @@ const About = () => {
 
   return (
     <div className="row align-items-center justify-content-center">
-      <div className="col-lg-6 my-3">
-        <div className="img-box dark-img-box">
-          <img src={process.env.PUBLIC_URL + "/img/about/about.png"} alt={translate("ABOUT.IMAGE_ALT")} />
-        </div>
-      </div>
-      <div className="col-lg-6 my-3">
+      <div className="col-lg-10 my-3">
         <div className="typo-box about-me">
           <h5>{profile.name}</h5>
           <h3>
