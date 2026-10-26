@@ -12,6 +12,7 @@ const ProjectModal = ({ project, onClose }) => {
   const poster = project.posters[language] ?? project.posters.en;
   const value = project.value[language] ?? project.value.en;
   const description = project.description[language] ?? project.description.en;
+  const screens = project.screens[language] ?? project.screens.en;
   const report = project.report && (project.report[language] ?? project.report.en);
   const liveUrl = project.liveUrl && (project.liveUrl[language] ?? project.liveUrl.en);
 
@@ -35,7 +36,7 @@ const ProjectModal = ({ project, onClose }) => {
   }, [activeScreen, onClose]);
 
   const stepScreen = (offset) =>
-    setActiveScreen((index) => (index + offset + project.screens.length) % project.screens.length);
+    setActiveScreen((index) => (index + offset + screens.length) % screens.length);
 
   return (
     <div className="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
@@ -73,7 +74,7 @@ const ProjectModal = ({ project, onClose }) => {
         <section className="project-modal-section">
           <h4>{translate("PROJECT.SCREENSHOTS")}</h4>
           <div className="project-screens">
-            {project.screens.map((screen, index) => (
+            {screens.map((screen, index) => (
               <button type="button" key={screen} className="project-screen" onClick={() => setActiveScreen(index)}>
                 <img
                   src={assetUrl(project, screen)}
@@ -112,7 +113,7 @@ const ProjectModal = ({ project, onClose }) => {
             ‹
           </button>
           <img
-            src={assetUrl(project, project.screens[activeScreen])}
+            src={assetUrl(project, screens[activeScreen])}
             alt={`${project.title} — ${translate("PROJECT.SCREENSHOT")} ${activeScreen + 1}`}
           />
           <button type="button" className="project-lightbox-nav next" onClick={() => stepScreen(1)} aria-label={translate("PORTFOLIO.GALLERY.NEXT")}>

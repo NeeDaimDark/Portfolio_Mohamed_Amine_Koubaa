@@ -8,7 +8,8 @@ import ProjectModal from "./ProjectModal";
 const CASE_STUDY_CATEGORY = "WEB";
 const TABS = [CASE_STUDY_CATEGORY, ...projectCategories];
 
-const caseStudyCover = (caseStudy) => `${process.env.PUBLIC_URL}/projects/${caseStudy.slug}/${caseStudy.screens[0]}`;
+const caseStudyCover = (caseStudy, language) =>
+  `${process.env.PUBLIC_URL}/projects/${caseStudy.slug}/${(caseStudy.screens[language] ?? caseStudy.screens.en)[0]}`;
 
 const isVideo = (source) => source.endsWith(".mp4");
 
@@ -47,7 +48,7 @@ const Portfolio = () => {
                 <div key={study.slug} className="col-lg-4 grid-item">
                   <button type="button" className="portfolio-box-01 case-study-card" onClick={() => setCaseStudy(study)}>
                     <div className="portfolio-img">
-                      <img src={caseStudyCover(study)} alt={study.title} loading="lazy" />
+                      <img src={caseStudyCover(study, language)} alt={study.title} loading="lazy" />
                       <span className="case-study-play" aria-hidden="true">
                         ▶
                       </span>
