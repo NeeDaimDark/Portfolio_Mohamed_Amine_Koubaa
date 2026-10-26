@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discord Bot — Project overview</title>
+<style>
+:root { --bg: #16171b; --panel: #1f2026; --panel-2: #26272e; --line: rgba(255,255,255,.08);
+        --text: #f4f4f5; --muted: rgba(255,255,255,.66); --accent: #dc965a; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+       font-size: 16px; line-height: 1.65; }
+.page { max-width: 980px; margin: 0 auto; padding: 48px 28px 64px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+.tagline { margin: 0; color: var(--muted); font-size: 18px; max-width: 760px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 32px 0 8px; }
+.fact { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fact b { display: block; color: var(--accent); font-size: 28px; line-height: 1.1; }
+.fact span { color: var(--muted); font-size: 14px; }
+.toc { margin: 28px 0 0; padding: 18px 22px; border-radius: 12px; background: var(--panel); }
+.toc h2 { margin: 0 0 8px; border: 0; padding: 0; font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+section { margin-top: 44px; }
+h2 { margin: 0 0 16px; padding-left: 14px; border-left: 4px solid var(--accent); font-size: 24px; }
+p { margin: 0 0 12px; }
+.text p { color: #e4e4e7; }
+.grid, .gallery { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 14px; }
+.card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.card h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.list { display: grid; gap: 10px; }
+.list .card { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 14px; align-items: baseline; }
+.steps { counter-reset: step; display: grid; gap: 12px; }
+.step { position: relative; padding: 16px 20px 16px 64px; border-radius: 12px; background: var(--panel); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; left: 18px; top: 16px; width: 30px; height: 30px;
+                border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.step h3 { margin: 0 0 4px; font-size: 17px; }
+.step p { margin: 0; color: var(--muted); font-size: 15px; }
+.tech-group { margin-bottom: 18px; }
+.tech-group h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.tech { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.tech div { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.tech b { display: block; color: var(--text); }
+.tech span { color: var(--muted); font-size: 14px; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { padding: 10px 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .toc ol { columns: 1; } .grid, .gallery { grid-template-columns: 1fr; } .list .card { grid-template-columns: 1fr; gap: 4px; } .page { padding: 28px 16px 40px; } }
+@media print { body { background: #fff; color: #111; } .fact, .card, .step, .tech div, figure, .toc { background: #f6f6f7; }
+               .text p, .card p, .step p, .tech span, figcaption, .tagline { color: #333; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker">Project overview</div>
+  <h1>Discord Bot</h1>
+  <p class="tagline">An AI teammate that lives in a development team&#x27;s Discord server. It records the team&#x27;s daily work, turns it into insights and next steps, and answers technical questions in private chats, without anyone leaving Discord.</p>
+  <div class="facts"><div class="fact"><b>16</b><span>slash commands for tasks, tracking, learning and AI help</span></div><div class="fact"><b>8</b><span>channels, each with its own purpose and commands</span></div><div class="fact"><b>6</b><span>streak milestones, from 3 to 100 days in a row</span></div><div class="fact"><b>10</b><span>commands per member per minute, to keep usage fair</span></div></div>
+  <nav class="toc"><h2>Contents</h2><ol><li><a href="#s1">At a glance</a></li><li><a href="#s2">Who it&#x27;s for</a></li><li><a href="#s3">The problem it solves</a></li><li><a href="#s4">Main features</a></li><li><a href="#s5">How it works</a></li><li><a href="#s6">Technologies</a></li><li><a href="#s7">Preview</a></li><li><a href="#s8">What it brings</a></li></ol></nav>
+  <section class="text"><h2 id="s1">At a glance</h2><p>Discord Bot (called MCP Bot inside the server) helps a development team stay organised where it already talks: Discord. Members type short slash commands to log what they did, ask for a summary of yesterday or a plan for today, and check the team&#x27;s progress.</p><p>Behind each command, an AI model reads the team&#x27;s recorded work and replies with summaries, recommendations and answers. The bot was built for a team working with the Model Context Protocol (MCP), so it also acts as a learning companion for MCP, Docker and AI topics.</p></section><section><h2 id="s2">Who it&#x27;s for</h2><div class="grid" style="--columns: 2"><div class="card"><h3>Developers</h3><p>Log tasks and progress in seconds, get feedback from the AI and ask technical questions in a private chat.</p></div><div class="card"><h3>Team leads</h3><p>See team statistics, progress analytics and AI recommendations on what to prioritise next.</p></div><div class="card"><h3>New team members</h3><p>Follow the built-in guide, learn MCP step by step and get daily tips.</p></div><div class="card"><h3>Server administrators</h3><p>Organise the server in minutes with a guided setup and pinned explanations in every channel.</p></div></div></section><section class="text"><h2 id="s3">The problem it solves</h2><p>In a busy team, daily progress gets lost in chat threads, nobody has a clear view of who is moving forward or blocked, and newcomers struggle to find answers about a technology as new as MCP.</p><p>The bot gives this work a home: every update is recorded in a structured way, the AI turns it into summaries and next steps, and questions get an answer immediately instead of waiting for a colleague.</p></section><section><h2 id="s4">Main features</h2><div class="list"><div class="card"><h3>Private AI chat</h3><p>/chat creates a channel only the member can see; /ask answers questions about MCP, AI and the team&#x27;s projects there.</p></div><div class="card"><h3>Problem solver</h3><p>/challenge-solver explains the likely root cause of a blocker, the steps to fix it and how to prevent it.</p></div><div class="card"><h3>Development updates</h3><p>/dev-update records the project, type of work, status and tools used, and the AI adds an assessment and a recommendation.</p></div><div class="card"><h3>Team insights</h3><p>/ai-insights and /team-progress analyse the team&#x27;s recorded work and suggest priorities.</p></div><div class="card"><h3>Daily tasks</h3><p>/task-completed logs finished work; /yesterday-summary and /today-plan give an AI summary and a plan for the day.</p></div><div class="card"><h3>Motivation and streaks</h3><p>Consecutive active days build a streak, unlock milestones with points and appear on the leaderboard.</p></div><div class="card"><h3>Learning</h3><p>/mcp-learn and /daily-tip share learning resources and tips on MCP, Docker and AI, by level.</p></div><div class="card"><h3>Organised channels</h3><p>/channel-setup posts a setup guide and an explanation card in each channel; each command only works in its own channel.</p></div><div class="card"><h3>Fair use</h3><p>Each member can run up to ten commands per minute, so the AI stays available for everyone.</p></div></div></section><section><h2 id="s5">How it works</h2><div class="steps"><div class="step"><h3>A member types a command</h3><p>Discord sends the slash command to the bot&#x27;s web service, which checks that the request really comes from Discord.</p></div><div class="step"><h3>The bot checks the context</h3><p>It makes sure the command is allowed in this channel and that the member has not exceeded the usage limit.</p></div><div class="step"><h3>Work is recorded</h3><p>Tasks, updates, streaks and chat sessions are saved in the database, building the team&#x27;s history.</p></div><div class="step"><h3>The AI answers</h3><p>The bot sends a ready-made prompt with the relevant data to the AI model and gets back a summary, an answer or a recommendation.</p></div><div class="step"><h3>The reply appears in Discord</h3><p>The answer is posted as a clear card, in the channel or privately, depending on the command.</p></div></div></section><section><h2 id="s6">Technologies</h2><div class="tech-group"><h3>Bot service</h3><div class="tech"><div><b>Node.js</b><span>Runs the bot.</span></div><div><b>Express</b><span>Receives the commands Discord sends to the bot&#x27;s web address.</span></div><div><b>Discord Interactions API</b><span>Delivers slash commands, verifies their signature and lets the bot create channels and post messages.</span></div></div></div><div class="tech-group"><h3>AI</h3><div class="tech"><div><b>Groq with LLaMA 3.3 70B</b><span>Writes summaries, answers, insights and recommendations.</span></div><div><b>Prompt library</b><span>A shared set of instructions loaded once, so answers stay consistent and use fewer tokens.</span></div><div><b>Key rotation and cache</b><span>Switches to another AI key when one reaches its limit and reuses recent answers.</span></div></div></div><div class="tech-group"><h3>Data &amp; hosting</h3><div class="tech"><div><b>MongoDB Atlas</b><span>Stores tasks, development updates, streaks, achievements, learning resources and chat sessions.</span></div><div><b>Render</b><span>Hosts the bot&#x27;s web service in the cloud.</span></div></div></div></section><section><h2 id="s7">Preview</h2><div class="gallery" style="--columns: 2"><figure><img src="../screens/01.jpg" alt="A private AI chat answering a question about MCP" loading="lazy"><figcaption>A private AI chat answering a question about MCP</figcaption></figure><figure><img src="../screens/03.jpg" alt="Team insights and a development update reviewed by the AI" loading="lazy"><figcaption>Team insights and a development update reviewed by the AI</figcaption></figure><figure><img src="../screens/09.jpg" alt="Guided setup of the server&#x27;s channels" loading="lazy"><figcaption>Guided setup of the server&#x27;s channels</figcaption></figure><figure><img src="../screens/12.jpg" alt="The built-in quick guide" loading="lazy"><figcaption>The built-in quick guide</figcaption></figure></div></section><section><h2 id="s8">What it brings</h2><div class="grid" style="--columns: 2"><div class="card"><h3>Visible progress</h3><p>Everyone sees what the team has done, who is on a streak and where help is needed.</p></div><div class="card"><h3>Faster answers</h3><p>Technical questions get a useful answer in seconds, privately, without interrupting a colleague.</p></div><div class="card"><h3>Less admin</h3><p>Summaries and daily plans are written by the AI from the team&#x27;s own updates.</p></div><div class="card"><h3>No new tool to learn</h3><p>Everything happens in Discord, where the team already works together.</p></div></div></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discord Bot — Présentation du projet</title>
+<style>
+:root { --bg: #16171b; --panel: #1f2026; --panel-2: #26272e; --line: rgba(255,255,255,.08);
+        --text: #f4f4f5; --muted: rgba(255,255,255,.66); --accent: #dc965a; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+       font-size: 16px; line-height: 1.65; }
+.page { max-width: 980px; margin: 0 auto; padding: 48px 28px 64px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+.tagline { margin: 0; color: var(--muted); font-size: 18px; max-width: 760px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 32px 0 8px; }
+.fact { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fact b { display: block; color: var(--accent); font-size: 28px; line-height: 1.1; }
+.fact span { color: var(--muted); font-size: 14px; }
+.toc { margin: 28px 0 0; padding: 18px 22px; border-radius: 12px; background: var(--panel); }
+.toc h2 { margin: 0 0 8px; border: 0; padding: 0; font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+section { margin-top: 44px; }
+h2 { margin: 0 0 16px; padding-left: 14px; border-left: 4px solid var(--accent); font-size: 24px; }
+p { margin: 0 0 12px; }
+.text p { color: #e4e4e7; }
+.grid, .gallery { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 14px; }
+.card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.card h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.list { display: grid; gap: 10px; }
+.list .card { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 14px; align-items: baseline; }
+.steps { counter-reset: step; display: grid; gap: 12px; }
+.step { position: relative; padding: 16px 20px 16px 64px; border-radius: 12px; background: var(--panel); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; left: 18px; top: 16px; width: 30px; height: 30px;
+                border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.step h3 { margin: 0 0 4px; font-size: 17px; }
+.step p { margin: 0; color: var(--muted); font-size: 15px; }
+.tech-group { margin-bottom: 18px; }
+.tech-group h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.tech { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.tech div { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.tech b { display: block; color: var(--text); }
+.tech span { color: var(--muted); font-size: 14px; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { padding: 10px 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .toc ol { columns: 1; } .grid, .gallery { grid-template-columns: 1fr; } .list .card { grid-template-columns: 1fr; gap: 4px; } .page { padding: 28px 16px 40px; } }
+@media print { body { background: #fff; color: #111; } .fact, .card, .step, .tech div, figure, .toc { background: #f6f6f7; }
+               .text p, .card p, .step p, .tech span, figcaption, .tagline { color: #333; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker">Présentation du projet</div>
+  <h1>Discord Bot</h1>
+  <p class="tagline">Un coéquipier IA installé dans le serveur Discord d&#x27;une équipe de développement. Il enregistre le travail quotidien, le transforme en analyses et en prochaines étapes, et répond aux questions techniques en salon privé, sans que personne ne quitte Discord.</p>
+  <div class="facts"><div class="fact"><b>16</b><span>commandes pour les tâches, le suivi, l&#x27;apprentissage et l&#x27;aide IA</span></div><div class="fact"><b>8</b><span>salons, chacun avec son rôle et ses commandes</span></div><div class="fact"><b>6</b><span>paliers de séries, de 3 à 100 jours d&#x27;affilée</span></div><div class="fact"><b>10</b><span>commandes par membre et par minute, pour un usage équitable</span></div></div>
+  <nav class="toc"><h2>Sommaire</h2><ol><li><a href="#s1">En bref</a></li><li><a href="#s2">Pour qui</a></li><li><a href="#s3">Le problème résolu</a></li><li><a href="#s4">Fonctionnalités principales</a></li><li><a href="#s5">Fonctionnement</a></li><li><a href="#s6">Technologies</a></li><li><a href="#s7">Aperçu</a></li><li><a href="#s8">Ce qu&#x27;il apporte</a></li></ol></nav>
+  <section class="text"><h2 id="s1">En bref</h2><p>Discord Bot (appelé MCP Bot dans le serveur) aide une équipe de développement à rester organisée là où elle échange déjà : Discord. Les membres tapent de courtes commandes pour noter ce qu&#x27;ils ont fait, demander un résumé de la veille ou un plan pour la journée, et suivre les progrès de l&#x27;équipe.</p><p>Derrière chaque commande, un modèle d&#x27;IA lit le travail enregistré et répond par des résumés, des recommandations et des réponses. Le bot a été conçu pour une équipe qui travaille avec le Model Context Protocol (MCP) : il sert aussi de compagnon d&#x27;apprentissage sur MCP, Docker et l&#x27;IA.</p></section><section><h2 id="s2">Pour qui</h2><div class="grid" style="--columns: 2"><div class="card"><h3>Développeurs</h3><p>Notent leurs tâches et avancées en quelques secondes, reçoivent un retour de l&#x27;IA et posent leurs questions techniques en privé.</p></div><div class="card"><h3>Responsables d&#x27;équipe</h3><p>Consultent les statistiques, l&#x27;analyse des progrès et les recommandations de l&#x27;IA sur les priorités.</p></div><div class="card"><h3>Nouveaux arrivants</h3><p>Suivent le guide intégré, apprennent MCP pas à pas et reçoivent des astuces quotidiennes.</p></div><div class="card"><h3>Administrateurs du serveur</h3><p>Organisent le serveur en quelques minutes grâce à une installation guidée et des explications épinglées dans chaque salon.</p></div></div></section><section class="text"><h2 id="s3">Le problème résolu</h2><p>Dans une équipe chargée, les avancées du jour se perdent dans les fils de discussion, personne ne voit clairement qui avance ou qui est bloqué, et les nouveaux peinent à trouver des réponses sur une technologie aussi récente que MCP.</p><p>Le bot donne un cadre à ce travail : chaque mise à jour est enregistrée de façon structurée, l&#x27;IA en tire des résumés et des prochaines étapes, et les questions obtiennent une réponse immédiate au lieu d&#x27;attendre un collègue.</p></section><section><h2 id="s4">Fonctionnalités principales</h2><div class="list"><div class="card"><h3>Discussion privée avec l&#x27;IA</h3><p>/chat crée un salon visible par le seul membre ; /ask y répond aux questions sur MCP, l&#x27;IA et les projets de l&#x27;équipe.</p></div><div class="card"><h3>Résolution de problèmes</h3><p>/challenge-solver explique la cause probable d&#x27;un blocage, les étapes pour le corriger et comment l&#x27;éviter.</p></div><div class="card"><h3>Suivi du développement</h3><p>/dev-update enregistre le projet, le type de travail, le statut et les outils utilisés ; l&#x27;IA ajoute une évaluation et une recommandation.</p></div><div class="card"><h3>Analyses d&#x27;équipe</h3><p>/ai-insights et /team-progress analysent le travail enregistré et proposent des priorités.</p></div><div class="card"><h3>Tâches du jour</h3><p>/task-completed enregistre le travail terminé ; /yesterday-summary et /today-plan donnent un résumé IA et un plan de journée.</p></div><div class="card"><h3>Motivation et séries</h3><p>Les jours actifs consécutifs forment une série, débloquent des paliers avec des points et alimentent le classement.</p></div><div class="card"><h3>Apprentissage</h3><p>/mcp-learn et /daily-tip partagent ressources et astuces sur MCP, Docker et l&#x27;IA, selon le niveau.</p></div><div class="card"><h3>Salons organisés</h3><p>/channel-setup publie un guide d&#x27;installation et une fiche explicative dans chaque salon ; chaque commande ne fonctionne que dans son salon.</p></div><div class="card"><h3>Usage équitable</h3><p>Chaque membre peut lancer jusqu&#x27;à dix commandes par minute, pour que l&#x27;IA reste disponible pour tous.</p></div></div></section><section><h2 id="s5">Fonctionnement</h2><div class="steps"><div class="step"><h3>Un membre tape une commande</h3><p>Discord transmet la commande au service web du bot, qui vérifie qu&#x27;elle provient bien de Discord.</p></div><div class="step"><h3>Le bot vérifie le contexte</h3><p>Il s&#x27;assure que la commande est autorisée dans ce salon et que le membre n&#x27;a pas dépassé la limite d&#x27;usage.</p></div><div class="step"><h3>Le travail est enregistré</h3><p>Tâches, mises à jour, séries et discussions sont sauvegardées en base, ce qui construit l&#x27;historique de l&#x27;équipe.</p></div><div class="step"><h3>L&#x27;IA répond</h3><p>Le bot envoie au modèle d&#x27;IA une consigne prête à l&#x27;emploi avec les données utiles, et reçoit un résumé, une réponse ou une recommandation.</p></div><div class="step"><h3>La réponse s&#x27;affiche dans Discord</h3><p>Elle est publiée sous forme de carte claire, dans le salon ou en privé selon la commande.</p></div></div></section><section><h2 id="s6">Technologies</h2><div class="tech-group"><h3>Service du bot</h3><div class="tech"><div><b>Node.js</b><span>Fait tourner le bot.</span></div><div><b>Express</b><span>Reçoit les commandes que Discord envoie à l&#x27;adresse web du bot.</span></div><div><b>API Interactions de Discord</b><span>Transmet les commandes, vérifie leur signature et permet au bot de créer des salons et de publier des messages.</span></div></div></div><div class="tech-group"><h3>IA</h3><div class="tech"><div><b>Groq avec LLaMA 3.3 70B</b><span>Rédige résumés, réponses, analyses et recommandations.</span></div><div><b>Bibliothèque de consignes</b><span>Un ensemble d&#x27;instructions partagé, chargé une seule fois, pour des réponses cohérentes et moins de jetons consommés.</span></div><div><b>Rotation des clés et cache</b><span>Bascule sur une autre clé IA quand l&#x27;une atteint sa limite et réutilise les réponses récentes.</span></div></div></div><div class="tech-group"><h3>Données et hébergement</h3><div class="tech"><div><b>MongoDB Atlas</b><span>Stocke tâches, mises à jour, séries, récompenses, ressources d&#x27;apprentissage et discussions.</span></div><div><b>Render</b><span>Héberge le service web du bot dans le cloud.</span></div></div></div></section><section><h2 id="s7">Aperçu</h2><div class="gallery" style="--columns: 2"><figure><img src="../screens/01.jpg" alt="Une discussion privée où l&#x27;IA répond à une question sur MCP" loading="lazy"><figcaption>Une discussion privée où l&#x27;IA répond à une question sur MCP</figcaption></figure><figure><img src="../screens/03.jpg" alt="Analyses d&#x27;équipe et mise à jour de développement évaluée par l&#x27;IA" loading="lazy"><figcaption>Analyses d&#x27;équipe et mise à jour de développement évaluée par l&#x27;IA</figcaption></figure><figure><img src="../screens/09.jpg" alt="Installation guidée des salons du serveur" loading="lazy"><figcaption>Installation guidée des salons du serveur</figcaption></figure><figure><img src="../screens/12.jpg" alt="Le guide de démarrage intégré" loading="lazy"><figcaption>Le guide de démarrage intégré</figcaption></figure></div></section><section><h2 id="s8">Ce qu&#x27;il apporte</h2><div class="grid" style="--columns: 2"><div class="card"><h3>Des progrès visibles</h3><p>Chacun voit ce que l&#x27;équipe a accompli, qui est sur une série et où un coup de main est utile.</p></div><div class="card"><h3>Des réponses plus rapides</h3><p>Les questions techniques obtiennent une réponse utile en quelques secondes, en privé, sans interrompre un collègue.</p></div><div class="card"><h3>Moins de suivi manuel</h3><p>Résumés et plans de journée sont rédigés par l&#x27;IA à partir des mises à jour de l&#x27;équipe.</p></div><div class="card"><h3>Aucun nouvel outil</h3><p>Tout se passe dans Discord, là où l&#x27;équipe travaille déjà ensemble.</p></div></div></section>
+</main>
+</body>
+</html>
