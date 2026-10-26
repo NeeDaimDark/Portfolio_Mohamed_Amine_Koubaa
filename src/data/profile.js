@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import resumeEnglish from "../amineResumeAnglais.pdf";
 import resumeFrench from "../amineResumeFrancais.pdf";
 
@@ -12,10 +12,8 @@ export const profile = {
 };
 
 export const socialLinks = [
-  { name: "Facebook", icon: FaFacebookF, url: "https://www.facebook.com/amine.koubaa.927/" },
-  { name: "Instagram", icon: FaInstagram, url: "https://www.instagram.com/amine.kouubaa/" },
   { name: "LinkedIn", icon: FaLinkedinIn, url: "https://www.linkedin.com/in/mohamed-amine-koubaa/" },
   { name: "GitHub", icon: FaGithub, url: "https://github.com/NeeDaimDark" },
 ];
 
-export const footerLinks = socialLinks.filter((link) => ["LinkedIn", "GitHub"].includes(link.name));
+export const footerLinks = socialLinks;
