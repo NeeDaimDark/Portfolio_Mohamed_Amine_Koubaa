@@ -5,8 +5,7 @@ import caseStudies from "../../data/caseStudies.json";
 import { useLanguage } from "../../i18n/LanguageContext";
 import ProjectModal from "./ProjectModal";
 
-const CASE_STUDY_CATEGORY = "WEB";
-const TABS = [CASE_STUDY_CATEGORY, ...projectCategories];
+const TABS = ["WEB", ...projectCategories];
 
 const caseStudyCover = (caseStudy, language) =>
   `${process.env.PUBLIC_URL}/projects/${caseStudy.slug}/${(caseStudy.screens[language] ?? caseStudy.screens.en)[0]}`;
@@ -28,7 +27,7 @@ const Portfolio = () => {
     }));
 
   const projectsOf = (tab) => projects.filter((project) => project.category === tab);
-  const caseStudiesOf = (tab) => (tab === CASE_STUDY_CATEGORY ? caseStudies : []);
+  const caseStudiesOf = (tab) => caseStudies.filter((study) => study.category === tab);
 
   const current = gallery && gallery.project.media[gallery.index];
 

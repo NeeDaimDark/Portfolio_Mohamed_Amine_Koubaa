@@ -2,7 +2,7 @@ const asset = (file) => process.env.PUBLIC_URL + "/img/portfolio/" + file;
 const sequence = (folder, from, to, extension) =>
   Array.from({ length: to - from + 1 }, (_, index) => asset(`${folder}/${from + index}.${extension}`));
 
-export const projectCategories = ["MOBILE", "GAMES", "VR", "ML"];
+export const projectCategories = ["MOBILE", "BOTS", "GAMES", "VR", "ML"];
 
 export const projects = [
   {

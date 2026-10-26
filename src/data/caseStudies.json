@@ -884,5 +884,82 @@
       "en": "report/en.html",
       "fr": "report/fr.html"
     }
+  },
+  {
+    "slug": "discord-bot",
+    "title": "Discord Bot",
+    "category": "BOTS",
+    "summary": {
+      "en": "A Discord bot that tracks a development team's work, shares AI insights and answers technical questions in private chats.",
+      "fr": "Un bot Discord qui suit le travail d'une équipe de développement, partage des analyses IA et répond aux questions techniques en salon privé."
+    },
+    "description": {
+      "en": "Discord Bot turns a team's Discord server into its work hub. Members log daily tasks and development updates with slash commands, the AI reviews them and suggests next steps, and team stats, streaks and a leaderboard keep progress visible. Private AI chats answer questions about MCP and AI, and every channel has its own purpose and commands.",
+      "fr": "Discord Bot transforme le serveur Discord d'une équipe en véritable QG de travail. Les membres notent leurs tâches et leurs avancées avec des commandes, l'IA les analyse et propose la suite, et statistiques, séries de jours actifs et classement rendent les progrès visibles. Des salons privés avec l'IA répondent aux questions sur MCP et l'IA, et chaque salon a son rôle et ses commandes."
+    },
+    "value": {
+      "en": {
+        "title": "A team hub inside Discord",
+        "lines": [
+          "For development teams that already work together on Discord.",
+          "Track work, learn faster and get AI help without leaving the conversation."
+        ]
+      },
+      "fr": {
+        "title": "Le QG de l'équipe dans Discord",
+        "lines": [
+          "Pour les équipes de développement qui travaillent déjà ensemble sur Discord.",
+          "Suivre le travail, apprendre plus vite et obtenir l'aide de l'IA sans quitter la conversation."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": {
+      "en": [
+        "screens/01.jpg",
+        "screens/02.jpg",
+        "screens/03.jpg",
+        "screens/04.jpg",
+        "screens/05.jpg",
+        "screens/06.jpg",
+        "screens/07.jpg",
+        "screens/08.jpg",
+        "screens/09.jpg",
+        "screens/10.jpg",
+        "screens/11.jpg",
+        "screens/12.jpg",
+        "screens/13.jpg",
+        "screens/14.jpg",
+        "screens/15.jpg"
+      ],
+      "fr": [
+        "screens/01.jpg",
+        "screens/02.jpg",
+        "screens/03.jpg",
+        "screens/04.jpg",
+        "screens/05.jpg",
+        "screens/06.jpg",
+        "screens/07.jpg",
+        "screens/08.jpg",
+        "screens/09.jpg",
+        "screens/10.jpg",
+        "screens/11.jpg",
+        "screens/12.jpg",
+        "screens/13.jpg",
+        "screens/14.jpg",
+        "screens/15.jpg"
+      ]
+    },
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    }
   }
 ]
