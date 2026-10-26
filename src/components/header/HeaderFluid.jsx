@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Scrollspy from "react-scrollspy";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const HeaderFluid = () => {
+  const { translate, language, setLanguage, languages } = useLanguage();
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [navbar, setNavbar] = useState(false);
@@ -34,7 +36,7 @@ const HeaderFluid = () => {
               <img
                 className="navbar-logo"
                 src={process.env.PUBLIC_URL + "/img/logo/logo.png"}
-                alt="Chadi's logo"
+                alt={translate("NAV.LOGO_ALT")}
               />
             </Link>
             {/* / */}
@@ -62,7 +64,7 @@ const HeaderFluid = () => {
               <Link to="/" className="sidebar-logo">
                 <img
                   src={process.env.PUBLIC_URL + "/img/logo/logo.png"}
-                  alt="mohamed amine koubaa"
+                  alt={translate("NAV.LOGO_ALT")}
                 />
               </Link>
               <Scrollspy
@@ -73,12 +75,12 @@ const HeaderFluid = () => {
               >
                 <li>
                   <a className="nav-link" href="#home" onClick={handleClick}>
-                    <span>Home</span>
+                    <span>{translate("NAV.HOME")}</span>
                   </a>
                 </li>
                 <li>
                   <a className="nav-link" href="#about" onClick={handleClick}>
-                    <span>About Me</span>
+                    <span>{translate("NAV.ABOUT")}</span>
                   </a>
                 </li>
                 <li>
@@ -87,12 +89,12 @@ const HeaderFluid = () => {
                     href="#services"
                     onClick={handleClick}
                   >
-                    <span>Services</span>
+                    <span>{translate("NAV.SERVICES")}</span>
                   </a>
                 </li>
                 <li>
                   <a className="nav-link" href="#work" onClick={handleClick}>
-                    <span>Portfolio</span>
+                    <span>{translate("NAV.PORTFOLIO")}</span>
                   </a>
                 </li>
                 {/* <li>
@@ -102,16 +104,29 @@ const HeaderFluid = () => {
                 </li> */}
                 <li>
                   <a className="nav-link" href="#contact" onClick={handleClick}>
-                    <span>Contact</span>
+                    <span>{translate("NAV.CONTACT")}</span>
                   </a>
                 </li>
               </Scrollspy>
+              <div className="language-switch" role="group" aria-label={translate("NAV.LANGUAGE")}>
+                {languages.map((code) => (
+                  <button
+                    key={code}
+                    type="button"
+                    className={code === language ? "active" : ""}
+                    aria-pressed={code === language}
+                    onClick={() => setLanguage(code)}
+                  >
+                    {code.toUpperCase()}
+                  </button>
+                ))}
+              </div>
               <button
                 className=" sidebar-bottom-closer dark-bg"
                 type="button"
                 onClick={handleClick}
               >
-                Close Sidebar
+                {translate("NAV.CLOSE_SIDEBAR")}
               </button>
             </div>
             {/* / */}

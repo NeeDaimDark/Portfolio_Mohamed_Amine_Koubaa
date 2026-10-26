@@ -1,76 +1,25 @@
 import React from "react";
+import { services } from "../../data/services";
+import { useLanguage } from "../../i18n/LanguageContext";
 
-const ServiceContent = [
-	{
-		icon: "ti-mobile",
-		no: "01",
-		service: "MOBILE APP DEVELOPMENT",
-		title: "Building cross-platform mobile applications with Flutter.",
-	},
-	{
-		icon: "ti-game",
-		no: "02",
-		service: "GAME DEVELOPMENT",
-		title: "Creating immersive games.",
-	},
-	{
-		icon: "ti-server",
-		no: "03",
-		service: "BACKEND DEVELOPMENT",
-		title: "Building efficient server-side solutions.",
-	},
-	{
-		icon: "ti-stats-up",
-		no: "04",
-		service: "PROJECT MANAGEMENT",
-		title: "Managing Agile Scrum projects for optimized results.",
-	},
-	{
-		icon: "ti-layout",
-		no: "05",
-		service: "UI/UX",
-		title: "Attractive User Interface. Interactive User Experience.",
-	},
-	{
-		icon: "ti-brush-alt",
-		no: "06",
-		service: "CLEAN CODE",
-		title: "Easily understandble. Easily exchangeable.",
-	},
-	{
-		icon: "ti-time",
-		no: "07",
-		service: "PUNCTUAL",
-		title: "Getting the job done within the exact agreed time frame.",
-	},
-	{
-		icon: "ti-world",
-		no: "08",
-		service: "CI/CD",
-		title: "Working in Agile method with DevOps approach.",
-	},
-];
+const Service = () => {
+  const { translate } = useLanguage();
 
-const ServiceTwo = () => {
-	return (
-		<>
-			<div className="row gy-4">
-				{ServiceContent.map((val, i) => (
-					<div className="col-sm-6 col-lg-4" key={i}>
-						<div className="feature-box-02">
-							<div className="icon">
-								<i className={val.icon}></i>
-							</div>
-							<h6>
-								<span>{val.no}.</span> {val.service}
-							</h6>
-							<h5>{val.title}</h5>
-						</div>
-					</div>
-				))}
-			</div>
-		</>
-	);
+  return (
+    <div className="services-grid">
+      {services.map((service, index) => (
+        <div className="feature-box-02" key={service.key}>
+          <div className="icon">
+            <i className={service.icon}></i>
+          </div>
+          <h6>
+            <span>{String(index + 1).padStart(2, "0")}.</span> {translate(`SERVICES.${service.key}.NAME`)}
+          </h6>
+          <h5>{translate(`SERVICES.${service.key}.DESCRIPTION`)}</h5>
+        </div>
+      ))}
+    </div>
+  );
 };
 
-export default ServiceTwo;
+export default Service;

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartajlife Admin — Project overview</title>
+<style>
+:root { --bg: #16171b; --panel: #1f2026; --panel-2: #26272e; --line: rgba(255,255,255,.08);
+        --text: #f4f4f5; --muted: rgba(255,255,255,.66); --accent: #dc965a; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+       font-size: 16px; line-height: 1.65; }
+.page { max-width: 980px; margin: 0 auto; padding: 48px 28px 64px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+.tagline { margin: 0; color: var(--muted); font-size: 18px; max-width: 760px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 32px 0 8px; }
+.fact { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fact b { display: block; color: var(--accent); font-size: 28px; line-height: 1.1; }
+.fact span { color: var(--muted); font-size: 14px; }
+.toc { margin: 28px 0 0; padding: 18px 22px; border-radius: 12px; background: var(--panel); }
+.toc h2 { margin: 0 0 8px; border: 0; padding: 0; font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+section { margin-top: 44px; }
+h2 { margin: 0 0 16px; padding-left: 14px; border-left: 4px solid var(--accent); font-size: 24px; }
+p { margin: 0 0 12px; }
+.text p { color: #e4e4e7; }
+.grid, .gallery { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 14px; }
+.card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.card h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.list { display: grid; gap: 10px; }
+.list .card { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 14px; align-items: baseline; }
+.steps { counter-reset: step; display: grid; gap: 12px; }
+.step { position: relative; padding: 16px 20px 16px 64px; border-radius: 12px; background: var(--panel); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; left: 18px; top: 16px; width: 30px; height: 30px;
+                border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.step h3 { margin: 0 0 4px; font-size: 17px; }
+.step p { margin: 0; color: var(--muted); font-size: 15px; }
+.tech-group { margin-bottom: 18px; }
+.tech-group h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.tech { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.tech div { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.tech b { display: block; color: var(--text); }
+.tech span { color: var(--muted); font-size: 14px; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { padding: 10px 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .toc ol { columns: 1; } .grid, .gallery { grid-template-columns: 1fr; } .list .card { grid-template-columns: 1fr; gap: 4px; } .page { padding: 28px 16px 40px; } }
+@media print { body { background: #fff; color: #111; } .fact, .card, .step, .tech div, figure, .toc { background: #f6f6f7; }
+               .text p, .card p, .step p, .tech span, figcaption, .tagline { color: #333; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker">Project overview</div>
+  <h1>Cartajlife Admin</h1>
+  <p class="tagline">The back office that staff use to run a loyalty and ambassador network: member accounts, grades, permissions, member chat, reference data and a complete activity log, in one web application.</p>
+  <div class="facts"><div class="fact"><b>4</b><span>account types managed</span></div><div class="fact"><b>3</b><span>ambassador grade levels</span></div><div class="fact"><b>4</b><span>permission actions per module</span></div><div class="fact"><b>3</b><span>location levels: country, governorate, city</span></div></div>
+  <nav class="toc"><h2>Contents</h2><ol><li><a href="#s1">At a glance</a></li><li><a href="#s2">Who it&#x27;s for</a></li><li><a href="#s3">The problem it solves</a></li><li><a href="#s4">Main features</a></li><li><a href="#s5">How it works</a></li><li><a href="#s6">Technologies</a></li><li><a href="#s7">Preview</a></li><li><a href="#s8">What it brings</a></li></ol></nav>
+  <section class="text"><h2 id="s1">At a glance</h2><p>Cartajlife runs a network of ambassadors who sell products and bring in new members. As they reach their sales objectives, ambassadors move up a ladder of grades (Standard, Manager, Leader), and each grade comes with its own default discount. Customers can be individuals or companies.</p><p>Cartajlife Admin is the web back office where the staff manage this network day to day: they create and update accounts, promote ambassadors, decide what each person can see or do, talk with members and review everything that happened in the system.</p></section><section><h2 id="s2">Who it&#x27;s for</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Network administrators</h3><p>Manage every account, set up grades and promotions, and decide what staff and ambassadors are allowed to see or change.</p></div><div class="card"><h3>Support and operations staff</h3><p>Look up members, answer them through the built-in chat and keep personal and bank details up to date, within the rights they have been given.</p></div><div class="card"><h3>Managers and auditors</h3><p>Follow who did what and when through a filterable activity log covering sign-ins and every change.</p></div></div></section><section><h2 id="s3">The problem it solves</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Many kinds of accounts</h3><p>Ambassadors, individual clients, company clients and staff each need different information. The back office keeps them in one place, with forms that adapt to each type.</p></div><div class="card"><h3>Who can see what</h3><p>In a sales network, visibility matters: an ambassador should only see the team information they are entitled to, and each staff member only the actions their role allows.</p></div><div class="card"><h3>Traceability</h3><p>Grade changes, account updates and deletions need to be explainable later. Every sign-in and every change is recorded automatically.</p></div></div></section><section><h2 id="s4">Main features</h2><div class="list"><div class="card"><h3>Account management</h3><p>Ambassadors, individual clients, company clients and staff in separate tabs, with search by name, email, ID card number or phone, status filters and pagination.</p></div><div class="card"><h3>Adaptive forms</h3><p>Bank details for ambassadors, company name and tax ID for companies, and a country, governorate and city selection that narrows down as you choose.</p></div><div class="card"><h3>Grades and promotions</h3><p>Grades with a default discount and a sales objective, manual promotion of an ambassador, and a full promotion history that can be filtered by ambassador or by mode.</p></div><div class="card"><h3>Ambassador visibility rules</h3><p>Per-ambassador switches for what their team data shows (invoices, orders, members, bonuses, challenges), filters by member grade, and exclusion of specific members.</p></div><div class="card"><h3>Staff permissions</h3><p>For each module, a staff member can be allowed to create, read, update or delete. Actions outside these rights are refused with a clear message.</p></div><div class="card"><h3>Member chat</h3><p>Conversations between the back office and members, with the last message in the list, a search to start a new chat and filtering of conversations.</p></div><div class="card"><h3>Location reference data</h3><p>Countries, governorates and cities managed in three linked levels, preloaded with the 24 Tunisian governorates and their cities.</p></div><div class="card"><h3>Bank reference data</h3><p>The list of banks used for ambassador bank details, with duplicates refused and banks in use protected from deletion.</p></div><div class="card"><h3>Activity log</h3><p>Every sign-in and every creation, update or deletion is recorded and can be filtered by module, action, user type and date range.</p></div><div class="card"><h3>Works on phones</h3><p>The whole back office adapts to small screens, with a slide-out navigation menu.</p></div></div></section><section><h2 id="s5">How it works</h2><div class="steps"><div class="step"><h3>A staff member signs in</h3><p>Only staff accounts can open the back office; ambassadors and clients are refused, and the session renews itself quietly while the person works.</p></div><div class="step"><h3>Their rights are applied</h3><p>Each request is checked against the person&#x27;s permissions for that module, so they can only create, read, update or delete what they were granted.</p></div><div class="step"><h3>They manage the network</h3><p>Accounts, grades, visibility rules, locations and banks are edited through forms that check the data before saving it.</p></div><div class="step"><h3>They talk with members</h3><p>The chat keeps each conversation with its history, so any follow-up starts from the full context.</p></div><div class="step"><h3>Everything is recorded</h3><p>Each change is written to the activity log, which can be reviewed later with filters.</p></div></div></section><section><h2 id="s6">Technologies</h2><div class="tech-group"><h3>Interface</h3><div class="tech"><div><b>Next.js and React</b><span>Build the back-office screens, navigation and side panels.</span></div><div><b>TypeScript</b><span>Used on both the interface and the server to keep data shapes consistent.</span></div><div><b>Tailwind CSS</b><span>Provides the visual style and the layout that adapts to phones.</span></div></div></div><div class="tech-group"><h3>Server &amp; APIs</h3><div class="tech"><div><b>Node.js and Express</b><span>Serve the REST API that the back office calls for every action.</span></div><div><b>Zod</b><span>Checks every form and request before the data is saved.</span></div></div></div><div class="tech-group"><h3>Data</h3><div class="tech"><div><b>MySQL</b><span>Stores accounts, permissions, grades, promotions, locations, banks and the activity log.</span></div><div><b>MongoDB</b><span>Stores chat conversations and messages.</span></div><div><b>Docker Compose</b><span>Starts both databases together for local work.</span></div></div></div><div class="tech-group"><h3>Security</h3><div class="tech"><div><b>JWT sessions</b><span>Short-lived sign-in tokens, renewed automatically through a protected cookie.</span></div><div><b>bcrypt</b><span>Stores passwords in hashed form only.</span></div><div><b>Role-based access control</b><span>Limits the back office to staff and applies per-module permissions on every request.</span></div></div></div></section><section><h2 id="s7">Preview</h2><div class="gallery" style="--columns: 2"><figure><img src="../screens/01.jpg" alt="Accounts: ambassadors with location, grade and status" loading="lazy"><figcaption>Accounts: ambassadors with location, grade and status</figcaption></figure><figure><img src="../screens/02.jpg" alt="Grades, manual promotion and promotion history" loading="lazy"><figcaption>Grades, manual promotion and promotion history</figcaption></figure><figure><img src="../screens/03.jpg" alt="Ambassador visibility rules, grade filters and exclusions" loading="lazy"><figcaption>Ambassador visibility rules, grade filters and exclusions</figcaption></figure><figure><img src="../screens/06.jpg" alt="Chat between the back office and a member" loading="lazy"><figcaption>Chat between the back office and a member</figcaption></figure></div></section><section><h2 id="s8">What it brings</h2><div class="grid" style="--columns: 2"><div class="card"><h3>One place to run the network</h3><p>Accounts, grades, rules, conversations and reference data are managed from a single back office.</p></div><div class="card"><h3>Controlled access</h3><p>Each staff member and each ambassador sees and does only what they are entitled to.</p></div><div class="card"><h3>A clear history</h3><p>Promotions and changes are recorded, so any decision can be traced back to who made it and when.</p></div><div class="card"><h3>Consistent data</h3><p>Shared lists for locations and banks, and checks on every form, keep member records clean.</p></div></div></section>
+</main>
+</body>
+</html>

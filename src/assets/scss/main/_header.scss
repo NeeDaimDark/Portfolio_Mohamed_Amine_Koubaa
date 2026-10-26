@@ -340,3 +340,39 @@
     transform: none;
   }
 }
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 20px;
+
+  button {
+    padding: 4px 10px;
+    border: 1px solid rgba(220, 150, 90, 0.6);
+    border-radius: 14px;
+    background: transparent;
+    color: #dc965a;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.active {
+      background: #dc965a;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .language-switch {
+    margin: 20px 0 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-header .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+}

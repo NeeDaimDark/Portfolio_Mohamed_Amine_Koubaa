@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Manager — Project overview</title>
+<style>
+:root { --bg: #16171b; --panel: #1f2026; --panel-2: #26272e; --line: rgba(255,255,255,.08);
+        --text: #f4f4f5; --muted: rgba(255,255,255,.66); --accent: #dc965a; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+       font-size: 16px; line-height: 1.65; }
+.page { max-width: 980px; margin: 0 auto; padding: 48px 28px 64px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+.tagline { margin: 0; color: var(--muted); font-size: 18px; max-width: 760px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 32px 0 8px; }
+.fact { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fact b { display: block; color: var(--accent); font-size: 28px; line-height: 1.1; }
+.fact span { color: var(--muted); font-size: 14px; }
+.toc { margin: 28px 0 0; padding: 18px 22px; border-radius: 12px; background: var(--panel); }
+.toc h2 { margin: 0 0 8px; border: 0; padding: 0; font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+section { margin-top: 44px; }
+h2 { margin: 0 0 16px; padding-left: 14px; border-left: 4px solid var(--accent); font-size: 24px; }
+p { margin: 0 0 12px; }
+.text p { color: #e4e4e7; }
+.grid, .gallery { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 14px; }
+.card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.card h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.list { display: grid; gap: 10px; }
+.list .card { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 14px; align-items: baseline; }
+.steps { counter-reset: step; display: grid; gap: 12px; }
+.step { position: relative; padding: 16px 20px 16px 64px; border-radius: 12px; background: var(--panel); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; left: 18px; top: 16px; width: 30px; height: 30px;
+                border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.step h3 { margin: 0 0 4px; font-size: 17px; }
+.step p { margin: 0; color: var(--muted); font-size: 15px; }
+.tech-group { margin-bottom: 18px; }
+.tech-group h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.tech { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.tech div { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.tech b { display: block; color: var(--text); }
+.tech span { color: var(--muted); font-size: 14px; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { padding: 10px 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .toc ol { columns: 1; } .grid, .gallery { grid-template-columns: 1fr; } .list .card { grid-template-columns: 1fr; gap: 4px; } .page { padding: 28px 16px 40px; } }
+@media print { body { background: #fff; color: #111; } .fact, .card, .step, .tech div, figure, .toc { background: #f6f6f7; }
+               .text p, .card p, .step p, .tech span, figcaption, .tagline { color: #333; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker">Project overview</div>
+  <h1>Project Manager</h1>
+  <p class="tagline">A project management platform where a software team plans its projects in delivery phases, moves each task through a fixed developer, project lead and tester workflow, and keeps support, billing and statistics in the same place.</p>
+  <div class="facts"><div class="fact"><b>3</b><span>roles: project lead, developer, tester</span></div><div class="fact"><b>6</b><span>task stages, from created to validated or rejected</span></div><div class="fact"><b>3</b><span>kinds of support tickets</span></div><div class="fact"><b>4</b><span>subscription plans with usage limits</span></div></div>
+  <nav class="toc"><h2>Contents</h2><ol><li><a href="#s1">At a glance</a></li><li><a href="#s2">Who it&#x27;s for</a></li><li><a href="#s3">The problem it solves</a></li><li><a href="#s4">Main features</a></li><li><a href="#s5">How it works</a></li><li><a href="#s6">Technologies</a></li><li><a href="#s7">Preview</a></li><li><a href="#s8">What it brings</a></li></ol></nav>
+  <section class="text"><h2 id="s1">At a glance</h2><p>Project Manager is a web application for software teams. An organisation creates its projects, splits the work into dated delivery phases, then into tasks. Each task follows the same path: a developer builds it, the project lead reviews it and sends it to testing, and a tester validates or rejects the result.</p><p>Every step is reserved for one role, recorded in the task history and announced by email to the people concerned. Around this core, the platform adds a task board, deadline alerts, cross-project pipelines, statistics with exports, support tickets, subscription billing and a built-in user guide.</p></section><section><h2 id="s2">Who it&#x27;s for</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Project lead (reporter)</h3><p>Creates projects, delivery phases and tasks, starts each phase, reviews delivered work and sends it to testing or back to the developer with a written reason. The organisation owner also manages the subscription.</p></div><div class="card"><h3>Developer</h3><p>Picks up assigned tasks, works through their checklist, marks the work as ready for review and resumes tasks that were rejected.</p></div><div class="card"><h3>Tester</h3><p>Sees the tasks waiting for tests, validates them or rejects them with a mandatory explanation that the developer and project lead receive.</p></div></div></section><section><h2 id="s3">The problem it solves</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Unclear task status</h3><p>Without a shared tool, the state of a task lives in messages and meetings. Here each task has one visible stage that only the right role can change.</p></div><div class="card"><h3>Rejections without context</h3><p>A rejected review or a failed test always comes with a written reason, saved on the task, so the developer knows what to fix.</p></div><div class="card"><h3>Scattered follow-up</h3><p>Deadlines, workload, support requests and billing usually sit in separate tools. The platform brings them together for the whole team.</p></div></div></section><section><h2 id="s4">Main features</h2><div class="list"><div class="card"><h3>Projects and phases</h3><p>Projects split into dated delivery phases, with progress, team members and a banner for late or upcoming deadlines.</p></div><div class="card"><h3>Tasks and board</h3><p>Searchable task list and a board with one column per stage, filters by status, priority, creator, label and date.</p></div><div class="card"><h3>Rich task sheets</h3><p>Formatted description, checklist, labels, due date, assignee, attachments and comments with mentions.</p></div><div class="card"><h3>Role-based workflow</h3><p>Each move between stages is limited to one role, with a written reason required for every rejection.</p></div><div class="card"><h3>History and notifications</h3><p>A dated history of every change, comment and file, and email notifications to the roles concerned.</p></div><div class="card"><h3>Deadline alerts</h3><p>Tasks and phases grouped as overdue, due today or due within 48 hours, shown in the top bar.</p></div><div class="card"><h3>Pipelines</h3><p>Cross-project groups of tasks with their own members, deadline, notes and status, without moving tasks out of their project.</p></div><div class="card"><h3>Statistics and exports</h3><p>Created, validated and rejected work per project, per person, per role and per period, with spreadsheet export.</p></div><div class="card"><h3>Support and billing</h3><p>Tickets for bugs, questions and quote requests, plus subscription plans with usage meters and online payment.</p></div><div class="card"><h3>In-app guide</h3><p>A general guide, a glossary and a help sheet for each page, available from anywhere in the application.</p></div></div></section><section><h2 id="s5">How it works</h2><div class="steps"><div class="step"><h3>The project lead creates the task</h3><p>The task is added to a delivery phase with a description, checklist, priority, due date and assignee. It can only move forward once its phase has started.</p></div><div class="step"><h3>The developer starts and delivers</h3><p>The developer takes the task, completes the checklist and marks it as ready for review. The project lead is notified.</p></div><div class="step"><h3>The project lead reviews</h3><p>The project lead approves the work and sends it to testing, or returns it to the developer with a written reason.</p></div><div class="step"><h3>The tester checks the result</h3><p>The tester validates the task or rejects it, again with a written reason. The developer and project lead are notified either way.</p></div><div class="step"><h3>Fix or close</h3><p>A rejected task goes back to the developer for corrections. A validated task is closed and counted in the statistics, with its full history kept.</p></div></div></section><section><h2 id="s6">Technologies</h2><div class="tech-group"><h3>Interface</h3><div class="tech"><div><b>React</b><span>Builds the single-page application and its screens.</span></div><div><b>TypeScript</b><span>Types the code on both the interface and the server.</span></div><div><b>Vite</b><span>Runs the development server and builds the application.</span></div><div><b>Tailwind CSS</b><span>Styles the interface, including the light and dark themes.</span></div><div><b>TanStack Query</b><span>Loads data from the server and keeps it up to date.</span></div><div><b>React Hook Form and Zod</b><span>Handle forms and check what users enter.</span></div></div></div><div class="tech-group"><h3>Server &amp; APIs</h3><div class="tech"><div><b>Node.js and Express</b><span>Serve the REST API used by the interface.</span></div><div><b>JSON Web Tokens</b><span>Keep users signed in through secure cookies.</span></div><div><b>Zod</b><span>Validates every request and the server configuration.</span></div><div><b>Nodemailer</b><span>Sends the email notifications for assignments, stage changes, comments and tickets.</span></div></div></div><div class="tech-group"><h3>Data</h3><div class="tech"><div><b>MySQL</b><span>Stores organisations, projects, tasks, history, tickets and subscriptions.</span></div><div><b>TypeORM</b><span>Maps the data model and applies versioned database changes.</span></div></div></div><div class="tech-group"><h3>Quality</h3><div class="tech"><div><b>Strict TypeScript</b><span>Catches type errors before the code runs.</span></div><div><b>Prettier and oxlint</b><span>Keep the code consistently formatted and checked.</span></div></div></div></section><section><h2 id="s7">Preview</h2><div class="gallery" style="--columns: 2"><figure><img src="../screens/02.jpg" alt="Project page with progress per delivery phase and deadline alerts." loading="lazy"><figcaption>Project page with progress per delivery phase and deadline alerts.</figcaption></figure><figure><img src="../screens/03.jpg" alt="Task board with one column per stage and filters." loading="lazy"><figcaption>Task board with one column per stage and filters.</figcaption></figure><figure><img src="../screens/06.jpg" alt="Tester view: validate or reject the tests of a delivered task." loading="lazy"><figcaption>Tester view: validate or reject the tests of a delivered task.</figcaption></figure><figure><img src="../screens/07.jpg" alt="Statistics per project, person and period, with export." loading="lazy"><figcaption>Statistics per project, person and period, with export.</figcaption></figure></div></section><section><h2 id="s8">What it brings</h2><div class="grid" style="--columns: 2"><div class="card"><h3>Clear responsibilities</h3><p>Each role sees what it has to act on, and only that role can move a task to the next stage.</p></div><div class="card"><h3>A record of every decision</h3><p>Reviews, tests, comments and files stay attached to the task, with dates and reasons.</p></div><div class="card"><h3>Fewer status meetings</h3><p>Dashboards, alerts and statistics answer the usual questions about progress and deadlines.</p></div><div class="card"><h3>One place for the team</h3><p>Planning, delivery, support and billing are handled in the same application.</p></div></div></section>
+</main>
+</body>
+</html>

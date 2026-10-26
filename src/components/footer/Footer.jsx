@@ -1,42 +1,25 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
-} from "react-icons/fa";
-
-const SocialShare = [
-  {
-    Social: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/in/mohamed-amine-koubaa/",
-  },
-  { Social: <FaGithub />, link: "https://github.com/NeeDaimDark" },
-];
+import { footerLinks } from "../../data/profile";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 const Footer = () => {
-  return (
-    <>
-      <div className="row align-items-center">
-        <div className="col-md-6 my-2">
-          <div className="nav justify-content-center text-center text-md-left justify-content-md-start">
-            {SocialShare.map((val, i) => (
-              <a key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
-                {val.Social}
-              </a>
-            ))}
-          </div>
-          {/* End .nav */}
-        </div>
-        {/* End .col */}
+  const { translate } = useLanguage();
 
-        <div className="col-md-6 my-2 text-center text-md-right">
-          <p>Built by Mohamed Amine Koubaa</p>
+  return (
+    <div className="row align-items-center">
+      <div className="col-md-6 my-2">
+        <div className="nav justify-content-center text-center text-md-left justify-content-md-start">
+          {footerLinks.map(({ name, icon: Icon, url }) => (
+            <a key={name} href={url} rel="noreferrer" target="_blank" aria-label={name}>
+              <Icon />
+            </a>
+          ))}
         </div>
-        {/* End .col */}
       </div>
-      {/* End .row */}
-    </>
+      <div className="col-md-6 my-2 text-center text-md-right">
+        <p>{translate("FOOTER.BUILT_BY")}</p>
+      </div>
+    </div>
   );
 };
 

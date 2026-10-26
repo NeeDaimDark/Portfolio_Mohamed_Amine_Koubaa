@@ -1,0 +1,533 @@
+[
+  {
+    "slug": "llm-gateway",
+    "title": "LLM Gateway",
+    "category": "WEB",
+    "summary": {
+      "en": "A company-wide gateway between products and AI model providers, with routing, budgets, usage rules and cost tracking.",
+      "fr": "Une passerelle d'entreprise entre les produits et les fournisseurs de modèles d'IA : routage, budgets, règles d'usage et suivi des coûts."
+    },
+    "description": {
+      "en": "LLM Gateway gives every product of a company one controlled access point to AI models from five providers. It switches to backup models when a provider fails, enforces budgets and usage rules, traces each request with its cost, and connects models to business tools. Teams manage it all from a web console in French, English and Arabic.",
+      "fr": "LLM Gateway offre à chaque produit d'une entreprise un accès unique et maîtrisé aux modèles d'IA de cinq fournisseurs. Elle bascule sur des modèles de secours en cas de panne, applique budgets et règles d'usage, trace chaque requête avec son coût et relie les modèles à des outils métier. Les équipes pilotent l'ensemble depuis une console web en français, anglais et arabe."
+    },
+    "value": {
+      "en": {
+        "title": "AI under control",
+        "lines": [
+          "For companies building AI into their products.",
+          "Teams plug in AI in minutes, while costs, data and risks stay under control."
+        ]
+      },
+      "fr": {
+        "title": "L'IA sous contrôle",
+        "lines": [
+          "Pour les entreprises qui intègrent l'IA à leurs produits.",
+          "L'IA s'intègre en quelques minutes, avec des coûts, des données et des risques maîtrisés."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://app.llmgateway.allence.cloud/",
+      "fr": "https://app.llmgateway.allence.cloud/"
+    }
+  },
+  {
+    "slug": "moveo",
+    "title": "Moveo",
+    "category": "WEB",
+    "summary": {
+      "en": "AI-assisted talent platform where employees grow their skills and careers, and HR teams validate training, match people to roles and plan mobility.",
+      "fr": "Plateforme de talents assistée par l'IA : les collaborateurs développent compétences et carrière ; les RH valident, recrutent et pilotent la mobilité interne."
+    },
+    "description": {
+      "en": "Moveo is a web platform that helps companies know, develop and keep their people, with spaces for employees, HR and owners. It covers skills and quizzes, AI-generated learning paths validated by HR, career paths, internal opportunities, recruitment, talent intelligence and analytics. Two AI assistants answer from the company's own data, while HR keeps the final decision.",
+      "fr": "Moveo est une plateforme web qui aide les entreprises à connaître, développer et garder leurs talents, avec un espace collaborateur, RH et owner. Elle couvre compétences et quiz, parcours de formation générés par l'IA et validés par les RH, parcours professionnels, opportunités internes, recrutement, talent intelligence et analytique. Deux assistants IA répondent à partir des données de l'entreprise ; les RH gardent la décision finale."
+    },
+    "value": {
+      "en": {
+        "title": "Talent you can see and grow",
+        "lines": [
+          "Employees see where they stand and how to move forward.",
+          "HR teams fill roles from within and decide with real skills data."
+        ]
+      },
+      "fr": {
+        "title": "Des talents visibles, qui progressent",
+        "lines": [
+          "Les collaborateurs savent où ils en sont et comment avancer.",
+          "Les RH pourvoient les postes en interne et décident sur des données concrètes."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://app.moveo.allence.cloud/",
+      "fr": "https://app.moveo.allence.cloud/"
+    }
+  },
+  {
+    "slug": "career",
+    "title": "Career",
+    "category": "WEB",
+    "summary": {
+      "en": "AI-assisted recruitment platform for candidates, recruiters and administrators: job offers, CV scoring, AI interviews and learning paths.",
+      "fr": "Plateforme de recrutement assistée par l'IA pour candidats, recruteurs et administrateurs : offres, score des CV, entretiens IA et parcours."
+    },
+    "description": {
+      "en": "Career is an AI-assisted recruitment platform. Candidates search offers, track each application, ask an AI assistant how well they fit and train toward a target job. Recruiters publish an offer from a link, text, image or form, receive AI-scored CVs and compare candidates before deciding. Administrators verify profiles and follow AI model usage.",
+      "fr": "Career est une plateforme de recrutement assistée par l'IA. Les candidats consultent les offres, suivent chaque candidature, demandent à un assistant IA leur adéquation et se forment vers un poste cible. Les recruteurs publient une offre depuis un lien, un texte, une image ou un formulaire, reçoivent des CV notés et comparent les candidats avant de décider. Les administrateurs vérifient les profils et suivent l'IA."
+    },
+    "value": {
+      "en": {
+        "title": "Less screening, better hiring",
+        "lines": [
+          "Recruiters shortlist the right people faster and can explain every decision.",
+          "Candidates know where they stand and what to learn next."
+        ]
+      },
+      "fr": {
+        "title": "Moins de tri, de meilleurs recrutements",
+        "lines": [
+          "Les recruteurs trouvent plus vite les bons profils et justifient chaque choix.",
+          "Les candidats savent où ils en sont et ce qu'il leur reste à apprendre."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://app.career.allence.cloud/",
+      "fr": "https://app.career.allence.cloud/"
+    }
+  },
+  {
+    "slug": "photoevent",
+    "title": "PhotoEvent",
+    "category": "WEB",
+    "summary": {
+      "en": "Event photography marketplace where photographers sell protected galleries and guests find their photos with face recognition.",
+      "fr": "Place de marché de la photo d'événements : les photographes vendent des galeries protégées, les invités retrouvent leurs photos par reconnaissance faciale."
+    },
+    "description": {
+      "en": "PhotoEvent is a web platform for wedding and event photography. Photographers publish protected galleries and manage bookings, orders, revenue, invoices and statistics; guests find their photos with face recognition and buy digital or printed copies, paid online or in cash. Administrators validate photographers, moderate reviews and handle pricing and payouts.",
+      "fr": "PhotoEvent est une plateforme web de photographie de mariages et d'événements. Les photographes publient des galeries protégées et gèrent réservations, commandes, revenus, factures et statistiques ; les invités retrouvent leurs photos par reconnaissance faciale et les achètent en numérique ou en tirage, en ligne ou en espèces. Les administrateurs valident les photographes, modèrent les avis et gèrent tarifs et versements."
+    },
+    "value": {
+      "en": {
+        "title": "From the event to the photo",
+        "lines": [
+          "Photographers sell their work and manage bookings without any technical tool.",
+          "Guests quickly find their own photos and buy only the ones they want."
+        ]
+      },
+      "fr": {
+        "title": "De l'événement à la photo",
+        "lines": [
+          "Les photographes vendent leur travail et gèrent leurs réservations sans outil technique.",
+          "Les invités retrouvent vite leurs photos et n'achètent que celles qu'ils veulent."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://app.photoevent.allence.cloud/",
+      "fr": "https://app.photoevent.allence.cloud/"
+    }
+  },
+  {
+    "slug": "prohunting",
+    "title": "ProHunting",
+    "category": "WEB",
+    "summary": {
+      "en": "Booking and operations platform for hunting-tourism stays in Tunisia, with a public site, a client portal and a back office.",
+      "fr": "Plateforme de réservation et de gestion des séjours de chasse touristique en Tunisie : site public, espace client et back-office."
+    },
+    "description": {
+      "en": "ProHunting manages hunting-tourism stays in Tunisia from the first request to the end of the stay. Hunters book through a guided request and follow their trip in a client portal. The team handles quotes, payments, official permits, day planning and zones drawn on a map from one back office. Documents are generated from the booking.",
+      "fr": "ProHunting gère les séjours de chasse touristique en Tunisie, de la demande à la fin du séjour. Les chasseurs réservent via une demande guidée et suivent leur voyage dans un espace client. L'équipe gère devis, paiements, autorisations officielles, planning et zones tracées sur carte depuis un back-office. Les documents sont générés à partir de la réservation."
+    },
+    "value": {
+      "en": {
+        "title": "From first request to final invoice",
+        "lines": [
+          "Hunters book and follow their stay online.",
+          "The agency handles bookings, paperwork and logistics in one tool, without typing the same data twice."
+        ]
+      },
+      "fr": {
+        "title": "De la demande à la facture",
+        "lines": [
+          "Les chasseurs réservent et suivent leur séjour en ligne.",
+          "L'agence gère réservations, démarches et logistique dans un seul outil, sans ressaisie."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://prohunting.net/en",
+      "fr": "https://prohunting.net/fr"
+    }
+  },
+  {
+    "slug": "soclis-crm",
+    "title": "SOCLIS CRM",
+    "category": "WEB",
+    "summary": {
+      "en": "A multi-company CRM and billing tool for service companies, from first contact to paid invoice, in French, English and Arabic.",
+      "fr": "Un CRM et outil de facturation multi-sociétés pour les sociétés de services, du premier contact à la facture payée, en français, anglais et arabe."
+    },
+    "description": {
+      "en": "SOCLIS CRM helps service companies manage clients, the sales pipeline, projects and maintenance due dates in one place. Owners, sales, finance and managers each work with their own role, from quotes to invoices, credit notes and payments. Clients answer quotes and find their documents through a secure link, and the app runs on desktop and mobile in French, English and Arabic.",
+      "fr": "SOCLIS CRM aide les sociétés de services à gérer clients, pipeline commercial, projets et échéances de maintenance au même endroit. Dirigeants, commerciaux, finance et managers travaillent chacun avec leur rôle, des devis aux factures, avoirs et paiements. Les clients répondent aux devis et retrouvent leurs documents par un lien sécurisé, sur ordinateur et mobile, en français, anglais et arabe."
+    },
+    "value": {
+      "en": {
+        "title": "From first contact to paid invoice",
+        "lines": [
+          "Service companies follow clients, sales and billing in one place.",
+          "Less chasing, fewer missed payments, and clients who see where they stand."
+        ]
+      },
+      "fr": {
+        "title": "Du premier contact à la facture payée",
+        "lines": [
+          "Les entreprises de services suivent clients, ventes et facturation au même endroit.",
+          "Moins de relances, moins d'impayés oubliés, et des clients qui savent où ils en sont."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    }
+  },
+  {
+    "slug": "supsante",
+    "title": "SupSanté",
+    "category": "WEB",
+    "summary": {
+      "en": "Website and admissions platform of a nursing school: trilingual public sites, online pre-registration, student area and admissions back office.",
+      "fr": "Site et plateforme d'admission d'une école d'infirmiers : sites publics trilingues, pré-inscription en ligne, espace étudiant et back-office."
+    },
+    "description": {
+      "en": "SupSanté is the website and admissions platform of a private nursing school, in French, English and Arabic. Applicants pre-register online, upload their documents and follow their file in a student area. The admissions team validates documents, requests missing ones and accepts or refuses files with e-mail notices, while administrators get per-module access, an audit log and built-in visit statistics.",
+      "fr": "SupSanté est le site et la plateforme d'admission d'une école privée de sciences infirmières, en français, anglais et arabe. Les candidats se pré-inscrivent en ligne, déposent leurs pièces et suivent leur dossier dans un espace étudiant. L'équipe d'admission valide les documents, réclame les pièces manquantes et accepte ou refuse avec e-mail, avec accès par module, journal d'audit et statistiques intégrées."
+    },
+    "value": {
+      "en": {
+        "title": "From first visit to admission",
+        "lines": [
+          "Applicants apply and track their file without paperwork or phone calls.",
+          "The school reviews every application in one place and decides faster."
+        ]
+      },
+      "fr": {
+        "title": "De la première visite à l'admission",
+        "lines": [
+          "Les candidats postulent et suivent leur dossier sans papier ni appel.",
+          "L'école traite toutes les candidatures au même endroit et décide plus vite."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    },
+    "liveUrl": {
+      "en": "https://supsante.tn/en/university",
+      "fr": "https://supsante.tn/fr/university"
+    }
+  },
+  {
+    "slug": "pm-wandertech",
+    "title": "Project Manager",
+    "category": "WEB",
+    "summary": {
+      "en": "A project management platform for software teams, where every task moves from developer to project lead to tester.",
+      "fr": "Une plateforme de gestion de projets pour équipes logicielles, où chaque tâche passe du développeur au chef de projet puis au testeur."
+    },
+    "description": {
+      "en": "Project Manager is a web platform where project leads, developers and testers plan projects in delivery phases and move each task through a fixed review and test workflow, with a written reason for every rejection. It adds a task board, deadline alerts, cross-project pipelines, statistics with exports, support tickets, subscription billing and an in-app guide, giving the team one shared view of the work.",
+      "fr": "Project Manager est une plateforme web où chefs de projet, développeurs et testeurs planifient les projets par phases de livraison et font avancer chaque tâche selon un circuit fixe de relecture et de test, avec un motif écrit pour chaque rejet. Elle ajoute un tableau des tâches, des alertes d'échéance, des pipelines transverses, des statistiques exportables, des tickets de support, la facturation et un guide intégré."
+    },
+    "value": {
+      "en": {
+        "title": "One shared view of the work",
+        "lines": [
+          "Leads, developers and testers each see what they need to act on.",
+          "Fewer status meetings, clear responsibilities and a full record of every decision."
+        ]
+      },
+      "fr": {
+        "title": "Une vision commune du travail",
+        "lines": [
+          "Responsables, développeurs et testeurs voient chacun ce qu’ils ont à faire.",
+          "Moins de réunions de suivi, des rôles clairs et une trace de chaque décision."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    }
+  },
+  {
+    "slug": "cartajlife",
+    "title": "Cartajlife Admin",
+    "category": "WEB",
+    "summary": {
+      "en": "Back office for a loyalty and ambassador network: staff manage accounts, grades, permissions and member chat in one place.",
+      "fr": "Back-office d'un réseau de fidélité et d'ambassadeurs : l'équipe y gère comptes, grades, permissions et échanges avec les membres."
+    },
+    "description": {
+      "en": "Cartajlife Admin is the web back office staff use to run a loyalty and ambassador network. It manages ambassadors, individual and company clients and staff, grades with discounts and sales objectives, ambassador visibility rules and per-module staff permissions. It also offers member chat, location and bank reference data and a full activity log, so every change stays traceable.",
+      "fr": "Cartajlife Admin est le back-office web avec lequel l'équipe pilote un réseau de fidélité et d'ambassadeurs. Il gère ambassadeurs, clients particuliers et entreprises, personnel, grades avec remises et objectifs, règles de visibilité des ambassadeurs et permissions du personnel par module. Il offre aussi une messagerie, des référentiels géographiques et bancaires et un journal d'activité complet."
+    },
+    "value": {
+      "en": {
+        "title": "One place to run the network",
+        "lines": [
+          "Staff manage members, grades and access rights from one screen.",
+          "Ambassadors only see what they should, and every action can be traced."
+        ]
+      },
+      "fr": {
+        "title": "Tout le réseau, un seul outil",
+        "lines": [
+          "L'équipe gère membres, grades et droits d'accès depuis un même écran.",
+          "Chaque ambassadeur ne voit que ce qui le concerne, et chaque action reste traçable."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    }
+  },
+  {
+    "slug": "nozhahotels",
+    "title": "Nozha Hotels",
+    "category": "WEB",
+    "summary": {
+      "en": "Online booking and payment platform for a hotel group, with a site for each hotel and a back office for staff.",
+      "fr": "Plateforme de réservation et de paiement en ligne pour un groupe hôtelier, avec un site par hôtel et un back-office pour les équipes."
+    },
+    "description": {
+      "en": "Nozha Hotels gives a group of two seaside hotels a shared welcome page and a site for each hotel. Travellers choose their room, meal plan and extras, see the total live, pay on the bank's secure page and receive e-mail confirmation with a PDF voucher. Hotel staff use a back office to follow reservations and payments and to set prices by season, room and meal plan.",
+      "fr": "Nozha Hotels offre à un groupe de deux hôtels en bord de mer une page d'accueil commune et un site par hôtel. Le voyageur choisit sa chambre, sa formule et ses suppléments, voit le total en direct, paie sur la page sécurisée de la banque et reçoit un e-mail avec un voucher PDF. Les équipes suivent réservations et paiements et fixent les prix par saison, chambre et formule."
+    },
+    "value": {
+      "en": {
+        "title": "Booking, from search to confirmation",
+        "lines": [
+          "Travellers book and pay online in a few steps.",
+          "Each hotel manages its own rooms, prices and reservations."
+        ]
+      },
+      "fr": {
+        "title": "De la recherche à la confirmation",
+        "lines": [
+          "Le voyageur réserve et paie en ligne en quelques étapes.",
+          "Chaque hôtel gère lui-même ses chambres, ses tarifs et ses réservations."
+        ]
+      }
+    },
+    "videos": {
+      "en": "video-en.mp4",
+      "fr": "video-fr.mp4"
+    },
+    "posters": {
+      "en": "poster-en.jpg",
+      "fr": "poster-fr.jpg"
+    },
+    "screens": [
+      "screens/01.jpg",
+      "screens/02.jpg",
+      "screens/03.jpg",
+      "screens/04.jpg",
+      "screens/05.jpg",
+      "screens/06.jpg",
+      "screens/07.jpg",
+      "screens/08.jpg"
+    ],
+    "report": {
+      "en": "report/en.html",
+      "fr": "report/fr.html"
+    }
+  }
+]

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nozha Hotels — Project overview</title>
+<style>
+:root { --bg: #16171b; --panel: #1f2026; --panel-2: #26272e; --line: rgba(255,255,255,.08);
+        --text: #f4f4f5; --muted: rgba(255,255,255,.66); --accent: #dc965a; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+       font-size: 16px; line-height: 1.65; }
+.page { max-width: 980px; margin: 0 auto; padding: 48px 28px 64px; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .14em; text-transform: uppercase; font-size: 13px; }
+h1 { margin: 10px 0 14px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+.tagline { margin: 0; color: var(--muted); font-size: 18px; max-width: 760px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 32px 0 8px; }
+.fact { padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fact b { display: block; color: var(--accent); font-size: 28px; line-height: 1.1; }
+.fact span { color: var(--muted); font-size: 14px; }
+.toc { margin: 28px 0 0; padding: 18px 22px; border-radius: 12px; background: var(--panel); }
+.toc h2 { margin: 0 0 8px; border: 0; padding: 0; font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.toc a { color: var(--text); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+section { margin-top: 44px; }
+h2 { margin: 0 0 16px; padding-left: 14px; border-left: 4px solid var(--accent); font-size: 24px; }
+p { margin: 0 0 12px; }
+.text p { color: #e4e4e7; }
+.grid, .gallery { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 14px; }
+.card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.card h3 { margin: 0 0 6px; color: var(--accent); font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.list { display: grid; gap: 10px; }
+.list .card { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 14px; align-items: baseline; }
+.steps { counter-reset: step; display: grid; gap: 12px; }
+.step { position: relative; padding: 16px 20px 16px 64px; border-radius: 12px; background: var(--panel); }
+.step::before { counter-increment: step; content: counter(step); position: absolute; left: 18px; top: 16px; width: 30px; height: 30px;
+                border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+.step h3 { margin: 0 0 4px; font-size: 17px; }
+.step p { margin: 0; color: var(--muted); font-size: 15px; }
+.tech-group { margin-bottom: 18px; }
+.tech-group h3 { margin: 0 0 10px; font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.tech { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.tech div { padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.tech b { display: block; color: var(--text); }
+.tech span { color: var(--muted); font-size: 14px; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+figure img { display: block; width: 100%; height: auto; }
+figcaption { padding: 10px 14px; color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .toc ol { columns: 1; } .grid, .gallery { grid-template-columns: 1fr; } .list .card { grid-template-columns: 1fr; gap: 4px; } .page { padding: 28px 16px 40px; } }
+@media print { body { background: #fff; color: #111; } .fact, .card, .step, .tech div, figure, .toc { background: #f6f6f7; }
+               .text p, .card p, .step p, .tech span, figcaption, .tagline { color: #333; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker">Project overview</div>
+  <h1>Nozha Hotels</h1>
+  <p class="tagline">An online booking and payment platform for a hotel group: one group site, one site per hotel, and a back office where each hotel manages its rooms, prices and reservations.</p>
+  <div class="facts"><div class="fact"><b>2</b><span>hotels on one platform</span></div><div class="fact"><b>4</b><span>booking steps, from search to payment</span></div><div class="fact"><b>3</b><span>back offices: group and one per hotel</span></div><div class="fact"><b>2</b><span>languages, English and French</span></div></div>
+  <nav class="toc"><h2>Contents</h2><ol><li><a href="#s1">At a glance</a></li><li><a href="#s2">Who it&#x27;s for</a></li><li><a href="#s3">The problem it solves</a></li><li><a href="#s4">Main features</a></li><li><a href="#s5">How it works</a></li><li><a href="#s6">Technologies</a></li><li><a href="#s7">Preview</a></li><li><a href="#s8">What it brings</a></li></ol></nav>
+  <section class="text"><h2 id="s1">At a glance</h2><p>Nozha Hotels brings together a group of two seaside hotels in Hammamet, Nozha Beach and Royal Nozha. A welcome page presents the group and lets visitors choose their hotel; each hotel then has its own site with rooms, photos, spa, restaurants and activities.</p><p>From any hotel site, travellers can check availability, build their stay, pay online on the bank&#x27;s secure page and receive their confirmation by e-mail. Behind the scenes, each hotel runs its own back office for content, pricing, reservations and payment settings.</p></section><section><h2 id="s2">Who it&#x27;s for</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Travellers</h3><p>Families and couples who want to compare rooms, see the exact price of their stay and book without calling the hotel.</p></div><div class="card"><h3>Hotel teams</h3><p>Reception, reservation and management staff who follow each booking and its payment, and set prices by season, room and meal plan.</p></div><div class="card"><h3>Group marketing</h3><p>The team that keeps the group welcome page up to date: hotel presentations, gallery, guest reviews, awards and newsletter.</p></div></div></section><section><h2 id="s3">The problem it solves</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Bookings scattered across channels</h3><p>Without its own booking engine, a hotel depends on phone calls, e-mails and intermediaries. The platform lets guests book and pay directly on the hotel&#x27;s site.</p></div><div class="card"><h3>Prices that change all the time</h3><p>Rates depend on the season, the room, the meal plan and the number of guests. A central pricing grid keeps every quote consistent with what the hotel decided.</p></div><div class="card"><h3>Several hotels, one group</h3><p>Each hotel keeps its own data, prices and payment account, while the group presents all its hotels in one place.</p></div></div></section><section><h2 id="s4">Main features</h2><div class="list"><div class="card"><h3>Group welcome page</h3><p>A shared entry point presenting the hotels, the group&#x27;s story, a photo gallery, guest reviews, awards and a newsletter sign-up.</p></div><div class="card"><h3>A site for each hotel</h3><p>Rooms filtered by category with photos, size, capacity and starting price, plus pages for the spa, restaurants, activities and contact.</p></div><div class="card"><h3>Guided booking</h3><p>Dates, number of adults and children, choice of room and meal plan, with several rooms possible in the same booking.</p></div><div class="card"><h3>Extras and events</h3><p>Optional services such as an airport transfer and dated events such as a gala dinner, added to the stay with a total that updates immediately.</p></div><div class="card"><h3>Online payment</h3><p>The guest pays on the bank&#x27;s secure page; the result is checked with the bank before the reservation is marked as paid.</p></div><div class="card"><h3>Reservation page and documents</h3><p>A personal reservation page, confirmation e-mails and PDF vouchers with a QR code, the stay summary and the cancellation policy.</p></div><div class="card"><h3>Reservation management</h3><p>A list of bookings filtered by status, with payment status, booking details, status changes and the option to resend a payment link or a voucher.</p></div><div class="card"><h3>Pricing and availability</h3><p>Daily prices by season, room and meal plan, room stock, minimum stays, stop sales, promotions and cancellation penalties.</p></div><div class="card"><h3>Per-hotel payment settings</h3><p>Each hotel has its own payment account and currency rates, so payments go to the right hotel.</p></div><div class="card"><h3>Content in two languages</h3><p>Hotel and group content is entered in English and French and visitors switch language at any time.</p></div></div></section><section><h2 id="s5">How it works</h2><div class="steps"><div class="step"><h3>Choose a hotel</h3><p>The visitor arrives on the group welcome page, picks a hotel and browses its rooms and services.</p></div><div class="step"><h3>Search</h3><p>They enter their dates and party; the platform shows the rooms available for those dates with the price for each meal plan.</p></div><div class="step"><h3>Build the stay</h3><p>They choose the room and meal plan, add extras or events, and see the total update as they go.</p></div><div class="step"><h3>Pay securely</h3><p>After entering their details, they are sent to the bank&#x27;s secure payment page for the exact amount of the stay.</p></div><div class="step"><h3>Receive the confirmation</h3><p>The reservation page shows the booking and its status, and the guest receives an e-mail with a PDF voucher.</p></div><div class="step"><h3>Follow up in the back office</h3><p>Hotel staff see the new booking with its payment status, confirm it and send the final voucher.</p></div></div></section><section><h2 id="s6">Technologies</h2><div class="tech-group"><h3>Interface</h3><div class="tech"><div><b>React</b><span>Builds the group page, the hotel sites, the booking flow and the back offices.</span></div><div><b>TypeScript</b><span>Adds types to the code on both the interface and the server side.</span></div><div><b>Vite</b><span>Runs the interface during development and produces the version that goes online.</span></div></div></div><div class="tech-group"><h3>Server &amp; APIs</h3><div class="tech"><div><b>Node.js and Express</b><span>Serve the data used by the sites and back offices, compute availability and prices, and handle bookings.</span></div><div><b>JSON Web Tokens</b><span>Keep each hotel&#x27;s back office signed in and separate from the others.</span></div><div><b>Scheduled tasks</b><span>Regularly re-check payments that are not yet finalised so that each booking shows its real status.</span></div></div></div><div class="tech-group"><h3>Data</h3><div class="tech"><div><b>MySQL</b><span>Stores content, prices, availability, reservations and payments, with separate data for each hotel.</span></div></div></div><div class="tech-group"><h3>Payments &amp; documents</h3><div class="tech"><div><b>ClicToPay</b><span>The bank&#x27;s payment gateway, where guests pay for their stay on a secure page.</span></div><div><b>PDFKit and QR codes</b><span>Generate the PDF vouchers sent to guests, each with a QR code linking to the reservation.</span></div><div><b>Nodemailer</b><span>Sends booking confirmations, vouchers, payment reminders and the group newsletter.</span></div></div></div></section><section><h2 id="s7">Preview</h2><div class="gallery" style="--columns: 3"><figure><img src="../screens/01.jpg" alt="The group welcome page, where visitors choose their hotel." loading="lazy"><figcaption>The group welcome page, where visitors choose their hotel.</figcaption></figure><figure><img src="../screens/03.jpg" alt="Booking: the room for the chosen dates, its amenities and the meal plan." loading="lazy"><figcaption>Booking: the room for the chosen dates, its amenities and the meal plan.</figcaption></figure><figure><img src="../screens/08.jpg" alt="Back office: the pricing grid by room and meal plan, day by day." loading="lazy"><figcaption>Back office: the pricing grid by room and meal plan, day by day.</figcaption></figure></div></section><section><h2 id="s8">What it brings</h2><div class="grid" style="--columns: 3"><div class="card"><h3>Direct bookings</h3><p>Guests book and pay on the hotel&#x27;s own site, at any time, and see the full total before paying.</p></div><div class="card"><h3>Less manual follow-up</h3><p>Payment status, confirmation e-mails and vouchers are handled by the platform, so staff focus on the guests.</p></div><div class="card"><h3>Room to grow</h3><p>Each hotel runs independently on the same platform, which makes it straightforward to add another hotel to the group.</p></div></div></section>
+</main>
+</body>
+</html>

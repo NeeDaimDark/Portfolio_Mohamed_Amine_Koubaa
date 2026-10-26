@@ -1,0 +1,21 @@
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import resumeEnglish from "../amineResumeAnglais.pdf";
+import resumeFrench from "../amineResumeFrancais.pdf";
+
+export const profile = {
+  name: "Mohamed Amine Koubaa",
+  email: "medaminekoubaa4@gmail.com",
+  // phone and whatsapp hidden until the French number is available
+  // phone: "+216 58 701 286",
+  // whatsapp: "+216 56 631 205",
+  resumes: { en: resumeEnglish, fr: resumeFrench },
+};
+
+export const socialLinks = [
+  { name: "Facebook", icon: FaFacebookF, url: "https://www.facebook.com/amine.koubaa.927/" },
+  { name: "Instagram", icon: FaInstagram, url: "https://www.instagram.com/amine.kouubaa/" },
+  { name: "LinkedIn", icon: FaLinkedinIn, url: "https://www.linkedin.com/in/mohamed-amine-koubaa/" },
+  { name: "GitHub", icon: FaGithub, url: "https://github.com/NeeDaimDark" },
+];
+
+export const footerLinks = socialLinks.filter((link) => ["LinkedIn", "GitHub"].includes(link.name));
