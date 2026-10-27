@@ -6,11 +6,16 @@
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; /* Center-align buttons */
   gap: 20px; /* Add spacing between buttons */
   padding-left: 0;
   margin-bottom: 25px;
   list-style: none; /* Remove bullets from list */
+
+  @media (max-width: 767px) {
+    gap: 8px 16px;
+  }
 }
 
 .filter li.react-tabs__tab {
@@ -21,7 +26,13 @@
   padding: 10px 15px; /* Add padding around the buttons */
   font-weight: 600;
   font-size: 16px;
+  white-space: nowrap;
   transition: color 0.3s ease, border-bottom 0.3s ease;
+
+  @media (max-width: 767px) {
+    padding: 6px 4px;
+    font-size: 14px;
+  }
 
   &:hover {
     color: #dc965a; /* Hover color */

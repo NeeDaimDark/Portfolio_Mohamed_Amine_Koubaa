@@ -5,7 +5,9 @@ import fr from "../assets/i18n/fr.json";
 const TRANSLATIONS = { en, fr };
 const LANGUAGES = Object.keys(TRANSLATIONS);
 const FALLBACK_LANGUAGE = "en";
-const STORAGE_KEY = "portfolio-language";
+const DEFAULT_LANGUAGE = "fr";
+// a new key so the language auto-saved by older versions no longer overrides the French default
+const STORAGE_KEY = "portfolio-language-choice";
 
 const readStoredLanguage = () => {
   try {
@@ -17,24 +19,26 @@ const readStoredLanguage = () => {
 
 const detectLanguage = () => {
   const stored = readStoredLanguage();
-  if (LANGUAGES.includes(stored)) return stored;
-  const browser = (navigator.language || "").slice(0, 2).toLowerCase();
-  return LANGUAGES.includes(browser) ? browser : FALLBACK_LANGUAGE;
+  return LANGUAGES.includes(stored) ? stored : DEFAULT_LANGUAGE;
 };
 
 const LanguageContext = createContext(null);
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(detectLanguage);
+  const [language, setCurrentLanguage] = useState(detectLanguage);
 
   useEffect(() => {
     document.documentElement.lang = language;
+  }, [language]);
+
+  const setLanguage = useCallback((chosen) => {
+    setCurrentLanguage(chosen);
     try {
-      window.localStorage.setItem(STORAGE_KEY, language);
+      window.localStorage.setItem(STORAGE_KEY, chosen);
     } catch {
       // storage blocked (private mode): the choice only lasts for this visit
     }
-  }, [language]);
+  }, []);
 
   const translate = useCallback(
     (key) => TRANSLATIONS[language][key] ?? TRANSLATIONS[FALLBACK_LANGUAGE][key] ?? key,
@@ -49,7 +53,7 @@ export const LanguageProvider = ({ children }) => {
 
   const value = useMemo(
     () => ({ language, languages: LANGUAGES, setLanguage, translate, formatMonth }),
-    [language, translate, formatMonth]
+    [language, setLanguage, translate, formatMonth]
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;

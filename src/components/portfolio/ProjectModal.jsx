@@ -19,9 +19,11 @@ const ProjectModal = ({ project, onClose }) => {
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    document.body.classList.add("project-modal-open");
     closeButton.current?.focus();
     return () => {
       document.body.style.overflow = previousOverflow;
+      document.body.classList.remove("project-modal-open");
     };
   }, []);
 

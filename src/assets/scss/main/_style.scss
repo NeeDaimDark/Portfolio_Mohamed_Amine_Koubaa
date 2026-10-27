@@ -1146,7 +1146,10 @@
 
 .contact-info {
   .media {
+    align-items: center;
+
     .icon {
+      flex-shrink: 0;
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -1159,8 +1162,10 @@
     }
 
     .media-body {
+      min-width: 0;
       padding-left: 15px;
       color: $px-dark;
+      overflow-wrap: anywhere;
     }
 
     +.media {
