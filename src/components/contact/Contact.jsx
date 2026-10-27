@@ -27,12 +27,6 @@ const Contact = () => {
           </div>
           <div className="media">
             <div className="icon">
-              <i className="ti-map"></i>
-            </div>
-            <span className="media-body">{translate("CONTACT.LOCATION")}</span>
-          </div>
-          <div className="media">
-            <div className="icon">
               <i className="ti-email"></i>
             </div>
             <span className="media-body">{profile.email}</span>
