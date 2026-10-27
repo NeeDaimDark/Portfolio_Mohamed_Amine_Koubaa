@@ -1,5 +1,4 @@
 import React from "react";
-import Collapsible from "react-collapsible";
 import { experiences } from "../../data/career";
 import { useLanguage } from "../../i18n/LanguageContext";
 
@@ -23,13 +22,6 @@ const Experience = () => {
             <p>
               {experience.company}, {translate(`COUNTRIES.${experience.country}`)}
             </p>
-            {experience.details && (
-              <div className="collapsible">
-                <Collapsible trigger={translate("EXPERIENCE.READ_MORE")}>
-                  <p className="collapsible-content">{translate(`EXPERIENCE.DETAILS.${experience.details}`)}</p>
-                </Collapsible>
-              </div>
-            )}
           </li>
         ))}
       </ul>
