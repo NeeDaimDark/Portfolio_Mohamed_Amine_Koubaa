@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import resumeEnglish from "../amineResumeAnglais.pdf";
-import resumeFrench from "../amineResumeFrancais.pdf";
+import resumeEnglish from "../CV_Mohamed_Amine_Koubaa_EN.pdf";
+import resumeFrench from "../CV_Mohamed_Amine_Koubaa_FR.pdf";
 
 export const profile = {
   name: "Mohamed Amine Koubaa",
