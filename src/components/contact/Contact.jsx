@@ -31,17 +31,14 @@ const Contact = () => {
             </div>
             <span className="media-body">{profile.email}</span>
           </div>
-          {/* Phone and WhatsApp hidden until the French number is available
           <div className="media">
             <div className="icon">
               <i className="ti-mobile"></i>
             </div>
             <span className="media-body">
-              {translate("CONTACT.MOBILE")}: {profile.phone} <br />
-              {translate("CONTACT.WHATSAPP")}: {profile.whatsapp}
+              {translate("CONTACT.MOBILE")}: <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a>
             </span>
           </div>
-          */}
         </div>
       </div>
     </div>
