@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.475fbf9b.css",
-    "main.js": "/static/js/main.b44ab8a0.js",
+    "main.js": "/static/js/main.b3076c6c.js",
     "static/js/453.1e3ff41f.chunk.js": "/static/js/453.1e3ff41f.chunk.js",
+    "static/media/CV_Mohamed_Amine_Koubaa_FR.pdf": "/static/media/CV_Mohamed_Amine_Koubaa_FR.23145cf5e4f5da3e4c9c.pdf",
+    "static/media/CV_Mohamed_Amine_Koubaa_EN.pdf": "/static/media/CV_Mohamed_Amine_Koubaa_EN.ecc77925ade79e358bb8.pdf",
     "static/media/icomoon.ttf?8mc8ao": "/static/media/icomoon.26fba05603ddcf5a7c48.ttf",
-    "static/media/CV_Mohamed_Amine_Koubaa_FR.pdf": "/static/media/CV_Mohamed_Amine_Koubaa_FR.c49a8f1edc82d0cf50f3.pdf",
-    "static/media/CV_Mohamed_Amine_Koubaa_EN.pdf": "/static/media/CV_Mohamed_Amine_Koubaa_EN.8f897c3963d5ef60ed47.pdf",
     "index.html": "/index.html",
     "main.475fbf9b.css.map": "/static/css/main.475fbf9b.css.map",
-    "main.b44ab8a0.js.map": "/static/js/main.b44ab8a0.js.map",
+    "main.b3076c6c.js.map": "/static/js/main.b3076c6c.js.map",
     "453.1e3ff41f.chunk.js.map": "/static/js/453.1e3ff41f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.475fbf9b.css",
-    "static/js/main.b44ab8a0.js"
+    "static/js/main.b3076c6c.js"
   ]
 }
